@@ -1,0 +1,83 @@
+/* Importert font */
+
+@font-face {
+    font-family: "AvenirNextCondenced"; 
+    src: url("Fonts/AvenirNextCondensed.ttf") format('truetype');
+    font-weight: normal;
+  }
+
+
+/* Body */
+
+body { 
+    background-color: #FDECDF; 
+    margin: 0px;
+  }
+
+
+/* Header */
+
+.Header {
+    background-color: #B53721;
+    height: 144px;
+   
+
+    .Logo { 
+        padding-left: 44px;
+        padding-top: 53px;
+        width: 99px;
+        margin-top: 0%;
+        position: absolute;
+      }
+  }
+
+
+/* Overskrift */
+
+  h1.Overskrift {
+    color: #B53721;
+    text-align: center;
+    font-size: 93px;
+    font-style: normal;
+    font-family: "relation-two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    z-index: 2;
+    margin-top: -20px;
+    margin-bottom: -40px;
+    position: relative;
+  }
+
+  h1.Støtteskrift-overskrift-1 {
+    padding-top: 86px;
+    color: #B53721;
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-family: "AvenirNextCondenced";
+    z-index: 2;
+    position: relative;
+
+}
+
+    h1.Støtteskrift-overskrift-2 {
+        color: #B53721;
+        text-align: center;
+        font-size: 34px;
+        font-style: normal;
+        font-family: "AvenirNextCondenced";
+        z-index: 2;
+        position: relative;
+
+  }
+ 
+
+
+  /* Foto */
+
+  .Splash { 
+    width: 100%;
+    margin-top: -300px;
+    position: absolute;
+    z-index: 1;
+  }
