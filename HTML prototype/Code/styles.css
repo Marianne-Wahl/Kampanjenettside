@@ -1,0 +1,354 @@
+/* Importert font */
+
+@font-face {
+    font-family: "AvenirNextCondenced"; 
+    src: url("../Fonts/AvenirNextCondensed.ttf") format('truetype');
+    font-weight: normal;
+  }
+
+
+/* Body */
+
+body { 
+    background-color: #FDECDF; 
+    margin: 0%
+  }
+
+
+  @media (min-width: 601px) {
+
+/* Header */
+
+.Header {
+    background-color: #B53721;
+    height: 144px;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+   
+
+    .Logo { 
+        padding-left: 44px;
+        padding-top: 53px;
+        width: 99px;
+        margin-top: 0%;
+        position: absolute;
+      }
+
+
+    .HeaderOmEk {
+
+        color: #FDECDF;
+        font-size: 20px;
+        font-family: "AvenirNextCondenced";
+        float: right;
+        padding-right: 44px;
+        padding-top: 50px;
+
+    } 
+  }
+
+#Splash {
+    display: block;
+    height: 728px;
+    padding-bottom: 50px;
+
+}
+
+/* Overskrift */
+
+  h1.Overskrift {
+    color: #B53721;
+    text-align: center;
+    font-size: 93px;
+    font-style: normal;
+    font-family: "relation-two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    z-index: 3;
+    margin-top: -20px;
+    margin-bottom: -40px;
+    position: relative;
+  }
+
+  h1.Støtteskrift-overskrift-1 {
+    padding-top: 86px;
+    color: #B53721;
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-family: "AvenirNextCondenced";
+    z-index: 3;
+    position: relative;
+
+}
+
+    h1.Støtteskrift-overskrift-2 {
+        color: #B53721;
+        text-align: center;
+        font-size: 34px;
+        font-style: normal;
+        font-family: "AvenirNextCondenced";
+        z-index: 3;
+        position: relative;
+
+  }
+ 
+
+
+  /* Foto splash */
+
+  .Splash { 
+    height: auto;
+    width: 100%;
+    margin-top: -20%;
+    position: absolute;
+    align-content: center;
+    z-index: 1;
+  }
+
+    /* Splash Illustrasjoner*/
+
+  .LeafTopLeft {
+    z-index: 2;
+    margin-top: -475px;
+    position: relative;
+    float: left;
+    max-width:100%;height:auto;
+  }
+
+  .LeafTopRight {
+    z-index: 2;
+    margin-top: -475px;
+    position: relative;
+    float: right;
+    max-width:100%;height:auto;
+  }
+
+  .FlowerTopLeft {
+    z-index: 3;
+    margin-top: -275px;
+    margin-left: 100px;
+    position: relative;
+    float: left;
+    max-width:100%;height:auto;
+  }
+
+  /* Om Panna Cotta */
+
+#OmPannaCotta {
+
+    display: block;
+    height: 700px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 10px;
+
+    }
+
+  .PannaCottaInfo {
+    width: auto;
+    position: absolute;
+    margin-left: -93px;
+    height: 656px;
+    margin-top: --;
+
+  }
+
+         /* Overskrift */
+        h2.OmPannaCotta-O {
+            color: #B53721;
+            text-align: center;
+            font-size: 55px;
+            font-style: normal;
+            font-family: "relation-two", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            z-index: 3;
+            margin-top: -17px;
+            margin-bottom: -50px;
+            position: relative;
+            display: block;
+            width: 388px;
+            height: auto;
+            margin-left: 58%;
+            padding-bottom: 31px;
+        }
+
+        h2.OmPannaCotta-SO1 {
+            padding-top: 200px;
+            color: #B53721;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            font-family: "AvenirNextCondenced";
+            z-index: 3;
+            position: relative;
+            display: block;
+            width: 388px;
+            height: auto;
+            margin-left: 58%;
+
+        }
+
+            h2.OmPannaCotta-SO2 {
+                color: #B53721;
+                text-align: center;
+                font-size: 20px;
+                font-style: normal;
+                font-family: "AvenirNextCondenced";
+                z-index: 3;
+                position: relative;
+                display: block;
+                width: 388px;
+                height: auto;
+                margin-left: 58%;
+                padding-bottom: 31px;
+
+        }
+
+        .OmPannaCotta-Mengdetekst {
+            color: #000;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-family: "AvenirNextCondenced";
+            z-index: 3;
+            position: relative;
+            margin-left: 58%;
+            display: block;
+            width: 388px;
+            height: auto;
+            padding-bottom: 49px;
+            
+
+        }
+    }
+
+
+
+    @media (max-width: 600px) {
+
+                body { 
+                    background-color: #FDECDF; 
+                    margin: 0%
+                  }
+
+                .Header {
+                    background-color: #B53721;
+                    height: 144px;
+                    width: auto;
+                    z-index: 3;
+                    position: relative;
+                   
+                
+                    .Logo { 
+                        padding-left: 44px;
+                        padding-top: 53px;
+                        width: 99px;
+                        margin-top: 0%;
+                        float: left;
+                      }
+            
+                
+
+                    .Hamburgermenu {
+                        padding-right: 44px;
+                        padding-top: 0%;
+                        float: right;
+                        width: 45px;
+                        margin-top: 0%;
+
+                    }
+
+         #Splash {
+                display: block;
+                height: 728px;
+                padding-bottom: 50px;
+                    
+                }
+                    
+         /* Overskrift */
+                    
+            h1.Overskrift {
+                        color: #B53721;
+                        text-align: center;
+                        font-size: 93px;
+                        font-style: normal;
+                        font-family: "relation-two", sans-serif;
+                        font-weight: 700;
+                        font-style: normal;
+                        z-index: 3;
+                        margin-top: -20px;
+                        margin-bottom: -40px;
+                        position: relative;
+                      }
+                    
+            h1.Støtteskrift-overskrift-1 {
+                        padding-top: 86px;
+                        color: #B53721;
+                        text-align: center;
+                        font-size: 34px;
+                        font-style: normal;
+                        font-family: "AvenirNextCondenced";
+                        z-index: 3;
+                        position: relative;
+                    
+                    }
+                    
+            h1.Støtteskrift-overskrift-2 {
+                            color: #B53721;
+                            text-align: center;
+                            font-size: 34px;
+                            font-style: normal;
+                            font-family: "AvenirNextCondenced";
+                            z-index: 3;
+                            position: relative;
+                    
+                      }
+                     
+                    
+                    
+                      /* Foto splash */
+                    
+            .Splash { 
+                        height: auto;
+                        width: 100%;
+                        margin-top: -20%;
+                        position: absolute;
+                        align-content: center;
+                        z-index: 1;
+                      }
+                    
+                        /* Splash Illustrasjoner*/
+                    
+            .LeafTopLeft {
+                        z-index: 2;
+                        margin-top: -475px;
+                        position: relative;
+                        float: left;
+                        max-width:100%;height:auto;
+                      }
+                    
+            .LeafTopRight {
+                        z-index: 2;
+                        margin-top: -475px;
+                        position: relative;
+                        float: right;
+                        max-width:100%;height:auto;
+                      }
+                    
+            .FlowerTopLeft {
+                        z-index: 3;
+                        margin-top: -275px;
+                        margin-left: 100px;
+                        position: relative;
+                        float: left;
+                        max-width:100%;height:auto;
+                      }
+
+
+
+
+            }
+        }
