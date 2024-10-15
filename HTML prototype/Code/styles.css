@@ -7,6 +7,9 @@
   }
 
 
+/* Desktop */
+@media (min-width: 601px) {
+
 /* Body */
 
 body { 
@@ -14,8 +17,6 @@ body {
     margin: 0%
   }
 
-
-  @media (min-width: 601px) {
 
 /* Header */
 
@@ -46,6 +47,14 @@ body {
         padding-top: 50px;
 
     } 
+
+    .Hamburgermeny {
+
+      display: none;
+
+    }
+
+
   }
 
 #Splash {
@@ -57,7 +66,7 @@ body {
 
 /* Overskrift */
 
-  h1.Overskrift {
+  h1.O {
     color: #B53721;
     text-align: center;
     font-size: 93px;
@@ -71,7 +80,7 @@ body {
     position: relative;
   }
 
-  h1.Støtteskrift-overskrift-1 {
+  h1.SO1 {
     padding-top: 86px;
     color: #B53721;
     text-align: center;
@@ -83,7 +92,7 @@ body {
 
 }
 
-    h1.Støtteskrift-overskrift-2 {
+    h1.SO2 {
         color: #B53721;
         text-align: center;
         font-size: 34px;
@@ -227,20 +236,34 @@ body {
 
 
 
-    @media (max-width: 600px) {
+
+
+
+
+
+
+  /* Mobil */
+  @media (max-width: 600px) {
+
+    /* Body */
 
                 body { 
-                    background-color: #FDECDF; 
-                    margin: 0%
-                  }
+                  background-color: #FDECDF; 
+                  margin: 0%
+                }
 
                 .Header {
                     background-color: #B53721;
                     height: 144px;
                     width: auto;
-                    z-index: 3;
+                    z-index: 4;
                     position: relative;
-                   
+                }
+
+                   .HeaderOmEk {
+                    display: none;
+                   }
+                  
                 
                     .Logo { 
                         padding-left: 44px;
@@ -252,9 +275,9 @@ body {
             
                 
 
-                    .Hamburgermenu {
+                    .Hamburgermeny {
                         padding-right: 44px;
-                        padding-top: 0%;
+                        padding-top: 62px;
                         float: right;
                         width: 45px;
                         margin-top: 0%;
@@ -263,92 +286,186 @@ body {
 
          #Splash {
                 display: block;
-                height: 728px;
+                height: 739px;
                 padding-bottom: 50px;
+
+         }
                     
-                }
+        
                     
          /* Overskrift */
                     
-            h1.Overskrift {
-                        color: #B53721;
-                        text-align: center;
-                        font-size: 93px;
-                        font-style: normal;
-                        font-family: "relation-two", sans-serif;
-                        font-weight: 700;
-                        font-style: normal;
-                        z-index: 3;
-                        margin-top: -20px;
-                        margin-bottom: -40px;
-                        position: relative;
-                      }
+          
+            .O {
+                color: #B53721;
+                text-align: center;
+                font-size: 15vw;
+                font-style: normal;
+                font-family: "relation-two", sans-serif;
+                z-index: 3;
+                margin-top: -3vw; 
+                margin-bottom: -5vw;
+                position: relative;
+            }
                     
-            h1.Støtteskrift-overskrift-1 {
-                        padding-top: 86px;
-                        color: #B53721;
-                        text-align: center;
-                        font-size: 34px;
-                        font-style: normal;
-                        font-family: "AvenirNextCondenced";
-                        z-index: 3;
-                        position: relative;
+            .SO1 {
+                padding-top: 100px;
+                color: #B53721;
+                text-align: center;
+                font-size: 5vw; 
+                font-style: normal;
+                font-family: "AvenirNextCondenced";
+                z-index: 3;
+                position: relative;
+                margin-top: 12vw; 
+            }
                     
-                    }
-                    
-            h1.Støtteskrift-overskrift-2 {
-                            color: #B53721;
-                            text-align: center;
-                            font-size: 34px;
-                            font-style: normal;
-                            font-family: "AvenirNextCondenced";
-                            z-index: 3;
-                            position: relative;
-                    
-                      }
-                     
-                    
+            .SO2 {
+              color: #B53721;
+              text-align: center;
+              font-size: 5vw; 
+              font-style: normal;
+              font-family: "AvenirNextCondenced";
+              z-index: 3;
+              position: relative;
+            }
                     
                       /* Foto splash */
                     
             .Splash { 
-                        height: auto;
+                        height: 80%;
                         width: 100%;
-                        margin-top: -20%;
+                        margin-top: -250px;
                         position: absolute;
                         align-content: center;
                         z-index: 1;
+                        object-fit:cover;
                       }
                     
                         /* Splash Illustrasjoner*/
                     
             .LeafTopLeft {
                         z-index: 2;
-                        margin-top: -475px;
+                        height: auto;
+                        width: 200px;
+                        margin-top: -420px;
+                        margin-left: 0px;
                         position: relative;
                         float: left;
-                        max-width:100%;height:auto;
+                        object-fit:fill;
                       }
                     
             .LeafTopRight {
                         z-index: 2;
-                        margin-top: -475px;
+                        height: auto;
+                        width: 250px;
+                        margin-top: -420px;
                         position: relative;
                         float: right;
-                        max-width:100%;height:auto;
+                        object-fit: fill;
                       }
                     
             .FlowerTopLeft {
                         z-index: 3;
-                        margin-top: -275px;
-                        margin-left: 100px;
+                        width: 80px;
+                        margin-top: -270px;
+                        margin-left: 70px;
                         position: relative;
                         float: left;
-                        max-width:100%;height:auto;
+                        object-fit: fill;
                       }
 
 
+                    
+/* Om Panna Cotta */
+
+#OmPannaCotta {
+
+  display: block;
+  height: 700px;
+  padding-bottom: 10px;
+
+  }
+
+.PannaCottaInfo {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  align-content: center;
+  height: auto;
+  padding-bottom: 30px;
+
+}
+
+       /* Overskrift */
+      h2.OmPannaCotta-O {
+          color: #B53721;
+          text-align: center;
+          font-size: 13vw;
+          font-style: normal;
+          font-family: "relation-two", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          margin-top: -4vw;
+          margin-bottom: -12vw;
+          width: 80%; 
+          max-width: 388px;
+          height: auto;
+          padding-bottom: 8vw;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      h2.OmPannaCotta-SO1 {
+          color: #B53721;
+          text-align: center;
+          font-size: 4vw;
+          font-style: normal;
+          font-family: "AvenirNextCondenced";
+          display: block;
+          width: 80%; 
+          max-width: 388px;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+
+      }
+
+          h2.OmPannaCotta-SO2 {
+              color: #B53721;
+              text-align: center;
+              font-size: 4vw;
+              font-style: normal;
+              font-family: "AvenirNextCondenced";
+              display: block;
+              width: 80%; 
+              max-width: 388px;
+              height: auto;
+              padding-bottom: 8vw;
+              margin-left: auto;
+              margin-right: auto;
+
+      }
+
+      .OmPannaCotta-Mengdetekst {
+        color: #000;
+        text-align: center;
+        font-size: 4vw; 
+        font-style: normal;
+        font-family: "AvenirNextCondenced";
+        width: 80%; 
+        max-width: 388px; 
+        height: auto;
+        padding-bottom: 49px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+                    
 
 
-            }
-        }
+     }
+
+              
+
+            
+        
