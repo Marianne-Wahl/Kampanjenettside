@@ -8,7 +8,7 @@
 
 
 /* Desktop */
-@media (min-width: 601px) {
+@media (min-width: 601px) {                                            /*   DESKTOP FORMAT <600px+   (SATT PÅ PAUSE, ARBEIDER MED MOBIL) */ 
 
 /* Body */
 
@@ -236,234 +236,426 @@ body {
 
 
 
+                                                  
+
+  @media (max-width: 600px) {                                          /*   MOBIL FORMAT >600px   */   
+                                                                       /* Funskjon som får nettsiden til å bruke følgende verdier fremfor verdiene overfor i formater mindre enn 600px */
 
 
 
 
+    body {                                                             /* BODY */ 
+      
+      background-color: #FDECDF;                                     /* Nettsidens bakgrunnsfarge */ 
+      margin: 0%                                                       /* Nettsidens marger */ 
+
+    }
 
 
-  /* Mobil */
-  @media (max-width: 600px) {
+          
+          .Header {                                                    /* HEADER */ 
 
-    /* Body */
+            background-color: #B53721;                               /* Bakgrunnsfarge header */ 
+            height: 144px;                                             /* Høyde på header */ 
+            width: auto;                                               /* Bredde på header */ 
+            z-index: 4;                                                /* Plasserer header på toppen av illustrasjoner */ 
+            position: relative;                                        /* Posisjon */ 
 
-                body { 
-                  background-color: #FDECDF; 
-                  margin: 0%
-                }
+          }
 
-                .Header {
-                    background-color: #B53721;
-                    height: 144px;
-                    width: auto;
-                    z-index: 4;
-                    position: relative;
-                }
+                  .HeaderOmEk {                                        /* HEADER - NAVIGASJONSBAR */ 
 
-                   .HeaderOmEk {
-                    display: none;
-                   }
+                    display: none;                                     /* Ikke synlig på mobil versjon */ 
+
+                  }
                   
                 
-                    .Logo { 
-                        padding-left: 44px;
-                        padding-top: 53px;
-                        width: 99px;
-                        margin-top: 0%;
-                        float: left;
-                      }
-            
-                
+                    .Logo {                                            /* HEADER - LOGO */ 
 
-                    .Hamburgermeny {
-                        padding-right: 44px;
-                        padding-top: 62px;
-                        float: right;
-                        width: 45px;
-                        margin-top: 0%;
+                      padding-left: 44px;                              /* Tomrom på venstre side av logo */ 
+                      padding-top: 53px;                               /* Tomrom på toppen av logo */ 
+                      width: 99px;                                     /* Logos bredde */               
+                      float: left;                                     /* Logos plassering på side; venstre */ 
+
+                    }
+            
+          
+                    .Hamburgermeny {                                   /* HEADER - HAMBURGERMENY */ 
+
+                      padding-right: 44px;                             /* Tomrom på høyre side av hamburgermeny */ 
+                      padding-top: 62px;                               /* Tomrom på toppen av hamburgermeny */ 
+                      float: right;                                    /* Hamburgermenys plassering på side; høyre */ 
+                      width: 45px;                                     /* Hamburgermenys bredde */ 
 
                     }
 
-         #Splash {
-                display: block;
-                height: 739px;
-                padding-bottom: 50px;
-
-         }
-                    
-        
-                    
-         /* Overskrift */
-                    
-          
-            .O {
-                color: #B53721;
-                text-align: center;
-                font-size: 15vw;
-                font-style: normal;
-                font-family: "relation-two", sans-serif;
-                z-index: 3;
-                margin-top: -3vw; 
-                margin-bottom: -5vw;
-                position: relative;
-            }
-                    
-            .SO1 {
-                padding-top: 100px;
-                color: #B53721;
-                text-align: center;
-                font-size: 5vw; 
-                font-style: normal;
-                font-family: "AvenirNextCondenced";
-                z-index: 3;
-                position: relative;
-                margin-top: 12vw; 
-            }
-                    
-            .SO2 {
-              color: #B53721;
-              text-align: center;
-              font-size: 5vw; 
-              font-style: normal;
-              font-family: "AvenirNextCondenced";
-              z-index: 3;
-              position: relative;
-            }
-                    
-                      /* Foto splash */
-                    
-            .Splash { 
-                        height: 80%;
-                        width: 100%;
-                        margin-top: -250px;
-                        position: absolute;
-                        align-content: center;
-                        z-index: 1;
-                        object-fit:cover;
-                      }
-                    
-                        /* Splash Illustrasjoner*/
-                    
-            .LeafTopLeft {
-                        z-index: 2;
-                        height: auto;
-                        width: 200px;
-                        margin-top: -420px;
-                        margin-left: 0px;
-                        position: relative;
-                        float: left;
-                        object-fit:fill;
-                      }
-                    
-            .LeafTopRight {
-                        z-index: 2;
-                        height: auto;
-                        width: 250px;
-                        margin-top: -420px;
-                        position: relative;
-                        float: right;
-                        object-fit: fill;
-                      }
-                    
-            .FlowerTopLeft {
-                        z-index: 3;
-                        width: 80px;
-                        margin-top: -270px;
-                        margin-left: 70px;
-                        position: relative;
-                        float: left;
-                        object-fit: fill;
-                      }
 
 
+          #Splash {                                                    /* SPLASH SIDE */ 
+
+            display: block;                                            /* Boks/ramme/gruppe for alle elementene inkludert på forsiden (splash) */ 
+            height: 739px;                                             /* Høyde på boks */ 
+            padding-bottom: 50px;                                      /* Tomrom mellom boks og neste element */ 
+
+          }
+              
+         
+                    .O {                                               /* OVERSKRIFT */ 
+
+                      color: #B53721;                                /* Tekstfarge */ 
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 15vw;                                 /* Skriftstørrelse 15vw = ca 58px (i 390px format) */ 
+                      font-family: "relation-two";                     /* Font*/ 
+                      font-style: normal;                              /* Font tyngde/stil */ 
+                      z-index: 3;                                      /* Plasserer tekst over bilde */ 
+                      margin-top: -3vw;                                /* Plasserer støtteoverskrift over nærmere overskriften / mindre linjeavstand */ 
+                      margin-bottom: -5vw;                             /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */ 
+                      position: relative;                              /* Posisjon */ 
+
+                    }
+
                     
-/* Om Panna Cotta */
+                    .SO1 {                                             /* STØTTEOVERSKRIFT 1 */ 
 
-#OmPannaCotta {
+                      padding-top: 100px;                              /* Padding på toppen av tittel */ 
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */  
+                      font-size: 5vw;                                  /* Skriftstørrelse 5vw = ca 18px (i 390px format) */ 
+                      font-style: normal;                              /* Font tyngde/stil */ 
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      z-index: 3;                                      /* Plasserer tekst over bilde */ 
+                      position: relative;                              /* Posisjon */ 
+                      margin-top: 12vw;                                /* Skaper større tomrom mellom tittel og header */ 
 
-  display: block;
-  height: 700px;
-  padding-bottom: 10px;
+                    }
+                    
 
+                    .SO2 {                                             /* STØTTEOVERSKRIFT 2 */ 
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 5vw;                                  /* Skriftstørrelse 5vw = ca 18px (i 390px format) */ 
+                      font-style: normal;                              /* Font tyngde/stil */ 
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      z-index: 3;                                      /* Plasserer tekst over bilde */ 
+                      position: relative;                              /* Posisjon */ 
+
+                    }
+                    
+
+                    
+                    .Splash {                                          /* FOTO SPLASH */ 
+
+                      height: 80%;                                     /* Foto høyde */ 
+                      width: 100%;                                     /* Foto bredde */ 
+                      margin-top: -250px;                              /* Foto plassering */ 
+                      position: absolute;                              /* Posisjon */ 
+                      align-content: center;                           /* Midstilt foto */ 
+                      z-index: 1;                                      /* Plasserer foto under alle andre elementer */ 
+                      object-fit:cover;                                /* Foto fyller hele definert område og blir beskåret/zoomet inn*/ 
+
+                    }
+                    
+
+                                                                       /* ILLUSTRASJONER */ 
+                    
+                    .LeafTopLeft {                                     /* ILLUSTRASJON - BLAD TOP VENSTRE */ 
+
+                      z-index: 2;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 200px;                                    /* Bredde på illustrasjon */ 
+                      margin-top: -420px;                              /* Plasserer illustrasjon delvis under header */ 
+                      position: relative;                              /* Posisjon */ 
+                      float: left;                                     /* Plasserer illustrasjon til venstre på siden */ 
+                      object-fit:fill;                                 /* Illustrasjon fyller definerte bredde og høyde */ 
+
+                    }
+
+                    
+                    .LeafTopRight {                                    /* ILLUSTRASJON - BLAD TOP HØYRE */ 
+
+                      z-index: 2;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 250px;                                    /* Bredde på illustrasjon */ 
+                      margin-top: -420px;                              /* Plasserer illustrasjon delvis under header */
+                      position: relative;                              /* Posisjon */ 
+                      float: right;                                    /* Plasserer illustrasjon til høyre på siden */ 
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+
+                    }
+
+                    
+                    .FlowerTopLeft {                                   /* ILLUSTRASJON - BLOMST TOP VENSTRE */ 
+
+                      z-index: 3;                                      /* Plasserer illustrasjon over bilde og andre illustrasjoner, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 80px;                                     /* Bredde på illustrasjon */ 
+                      margin-top: -270px;                              /* Plasserer illustrasjon på toppen av venstre illustrasjon */
+                      margin-left: 70px;                               /* Plasserer illustrasjon på toppen av venstre illustrasjon */
+                      position: relative;                              /* Posisjon */ 
+                      float: left;                                     /* Plasserer illustrasjon til venstre på siden */ 
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+
+                    }
+
+                    
+
+          #OmPannaCotta {                                              /* OM PRODUKTET */ 
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene inkludert på forsiden (splash) */ 
+                height: 230vw;                                         /* Høyde på boks */ 
+                padding-bottom: 10px;                                  /* Tomrom mellom boks og neste element */ 
+
+               }
+
+
+                    .PannaCottaInfo {                                  /* PRODUKT BILDE */ 
+
+                      display: block;                                  /* For å unngå at andre elementer legger seg ved siden av eller oppå bildet */
+                      width: 100%;                                     /* Foto bredde */
+                      object-fit: fill;                                /* Foto fyller definerte bredde og høyde */
+                      align-content: center;                           /* Midtstilt foto */
+                      height: auto;                                    /* Foto høyde */
+                      padding-bottom: 30px;                            /* Padding under foto */
+
+                     }
+
+
+                    h2.OmPannaCotta-O {                                /* OVERSKRIFT */ 
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 13vw;                                 /* Skriftstørrelse 13vw = ca 52px (i 390px format) */ 
+                      font-family: "relation-two";                     /* Font */ 
+                      font-style: normal;                              /* Font tyngde/stil */
+                      margin-top: -4vw;                                /* Plasserer støtteoverskrift over nærmere overskriften / mindre linjeavstand  */
+                      margin-bottom: -12vw;                            /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks høyde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 8vw;                             /* Padding under teksten */
+                      margin-left: auto;                               /* For midtstilling av tekst */
+                      margin-right: auto;                              /* For midtstilling av tekst */
+
+                    }
+
+
+                    h2.OmPannaCotta-SO1 {                              /* STØTTEOVERSKRIFT 1 */ 
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */  
+                      font-style: normal;                              /* Font tyngde/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      display: block;                                  /* For å unngå at andre elementer legger seg ved siden av teksten */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      margin-left: auto;                               /* For midtstilling av tekst */
+                      margin-right: auto;                              /* For midtstilling av tekst */
+
+                    }
+
+
+                    h2.OmPannaCotta-SO2 {                              /* STØTTEOVERSKRIFT 2 */ 
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                      font-style: normal;                              /* Font tyngde/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      display: block;                                  /* For å unngå at andre elementer legger seg ved siden av teksten */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 8vw;                             /* Padding under tekstboks */
+                      margin-left: auto;                               /* For midtstilling av tekst */
+                      margin-right: auto;                              /* For midtstilling av tekst */
+
+                    }
+
+
+                    .OmPannaCotta-Mengdetekst {                        /* MENGDETEKST */
+
+                      color: #000;                                   /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                      font-style: normal;                              /* Font tynge/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 49px;                            /* Padding under tekstboks */
+                      margin-left: auto;                               /* For midtstilling av tekst */
+                      margin-right: auto;                              /* For midtstilling av tekst */
+      
+                    }
+                    
+
+                    .button {                                          /* KNAPPER */
+
+                      cursor: pointer;                                 /* Endrer musepekeren */
+                      background-color: #B53721;                     /* Bakgrunnsfarge */
+                      color: #FDECDF;                                /* Tekstfarge */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                      border-radius: 5vw;                              /* Avrundede hjørner */
+                      border: none;                                    /* Ingen ramme */
+                      width: 79vw;                                     /* Bredden på knappen */
+                      height: 16vw;                                    /* Høyden på knappen */
+                      max-width: 388px;                                /* Maks bredde på knappen */
+                      margin-bottom: 20px;                             /* Tomrom mellom knappene */
+                      margin-left: auto;                               /* Tomrom til venstre */
+                      margin-right: auto;                              /* Tomrom til høyre */
+                      display:grid;                                    /* For midtstilling av knapper */
+                      align-content: space-evenly;                     /* For spesifisering av midstilling av tekst i knapp */
+                      box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                      
+
+                   }
+
+
+          #OmFotoKonkurranse {                                         /* OM FOTOKONKURRANSE */ 
+
+            display: block;                                            /* Boks/ramme/gruppe for alle elementene inkludert på forsiden (splash) */
+            height: 700px;                                             /* Høyde på boks */ 
+            padding-bottom: 10px;                                      /* Tomrom mellom boks og neste element */ 
+    
+          }
+
+
+                    .carousel-container {                              /* FOTO KARUSELL */
+
+                      position: relative;                              /* Posisjon */
+                      width: 100%;                                     /* Karusell bredde */
+                      max-width: 100%;                                 /* Maks bredde */
+                      overflow: hidden;                                /* Skjuler alt som går utenfor bredden på karusell konteineren */
+
+                  }
+                  
+                  
+                        .carousel {
+
+                          display: flex;                               /* Plasserer elementer ved siden av hverandre */
+                          scroll-behavior: smooth;                     /* Animasjon effekt */
+                          transition: transform 0.5s ease;             /* Animasjon ved klikk på knapp */
+                          /* overflow-x: hidden; */
+
+                        }
+                  
+
+                        .carousel-item {
+
+                          min-width: 100%;                             /* Minimum bredde - får karusellen til å skalere */
+                          max-width: 100%;                             /* Maks bredde - får karusellen til å skalere */
+                          text-align: center;                          /* Midtstilt tekst */
+
+                        }
+                  
+
+                        .carousel-item img {                           /* FOTO */
+
+                          max-width: 79vw;                             /* Maks bredde - får karusellen til å skalere */
+                          min-width: 79vw;                             /* Minimum bredde - får karusellen til å skalere */
+                          border: 6px solid;                           /* Ramme */
+                          border-color: #fff;                        /* Farge på ramme*/
+
+                        }
+
+                  
+                        .carousel-item p {
+
+                          margin-top: 10px;                            /* Tomrom mellom tekst og fotokarusell */
+                          font-size: 3vw;                              /* Skriftstørrelse 3vw = ca 12px (i 390px format) */
+                          color: #555;                               /* Tekstfarge */
+                          font-family: "AvenirNextCondenced";          /* Font */
+                            
+                        }
+              
+                  
+                        .prev-btn {                                    /* TILBAKE-KNAPP VENSTRE */
+
+                          cursor: pointer;                             /* Endrer musepekeren */
+                          position: absolute;                          /* Posisjon */
+                          top: 35%;
+                          height: 12vw;                                /* Høyde på knapp 12vw = ca 48px (i 390px format) */
+                          width: 12vw;                                 /* Bredde på knapp 12vw = ca 48px (i 390px format) */
+                          background-color: #B53721;                 /* Bakgrunnsfarge */
+                          color: white;                              /* Tekstfarge */
+                          border: none;                                /* Ingen ramme */
+                          font-size: 4vw;                              /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                          z-index: 4;                                  /* Plasserer knapper over bilde */
+                          border-radius: 100%;                         /* Gjør knappen rund */
+                          left: 10px;                                  /* Plasserer knappen til venstre men med noe tomrom */
+                          box-shadow: 0 4px 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+
+                        }
+                  
+
+                        .next-btn {                                    /* NESTE-KNAPP HØYRE */
+
+                          cursor: pointer;                             /* Endrer musepekeren */
+                          position: absolute;                          /* Posisjon */
+                          top: 35%;
+                          height: 12vw;                                /* Høyde på knapp 12vw = ca 48px (i 390px format) */
+                          width: 12vw;                                 /* Bredde på knapp 12vw = ca 48px (i 390px format) */
+                          background-color: #B53721;                 /* Bakgrunnsfarge */
+                          color: white;                              /* Tekstfarge */
+                          border: none;                                /* Ingen ramme */
+                          font-size: 4vw;                              /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                          z-index: 4;                                  /* Plasserer knapper over bilde */
+                          border-radius: 100%;                         /* Gjør knappen rund */
+                          right: 10px;                                 /* Plasserer knappen til høyre men med noe tomrom */
+                          box-shadow: 0 4px 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+
+                        }
+
+
+                            button:hover {
+
+                              background-color: #911912;             /* Bakgrunnsfarge på knapp når musepeker svever (hover) over */
+
+                            }
+
+
+                      
+                    H3.Overskrift {                                    /* OVERSKRIFT */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 13vw;                                 /* Skriftstørrelse 13vw = ca 52px (i 390px format) */ 
+                      font-family: "relation-two";                     /* Font */ 
+                      font-style: normal;                              /* Font stil */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      margin-bottom: -5vw;                             /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */ 
+                      margin-left: auto;                               /* For midtstilling av tekst */
+                      margin-right: auto;                              /* For midtstilling av tekst */
+
+                    }
+
+
+                    H3.Underoverskrift {                               /* UNDEROVERSKRIFT */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                      font-style: normal;                              /* Font tyngde/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      display: block;                                  /* For å unngå at andre elementer legger seg ved siden av teksten */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 8vw;                             /* Padding under tekstboks */
+                      margin-left: auto;                               /* For midtstilling av tekst */
+                      margin-right: auto;                              /* For midtstilling av tekst */
+
+
+                    }
+
+     
   }
-
-.PannaCottaInfo {
-  display: block;
-  width: 100%;
-  object-fit: fill;
-  align-content: center;
-  height: auto;
-  padding-bottom: 30px;
-
-}
-
-       /* Overskrift */
-      h2.OmPannaCotta-O {
-          color: #B53721;
-          text-align: center;
-          font-size: 13vw;
-          font-style: normal;
-          font-family: "relation-two", sans-serif;
-          font-weight: 700;
-          font-style: normal;
-          margin-top: -4vw;
-          margin-bottom: -12vw;
-          width: 80%; 
-          max-width: 388px;
-          height: auto;
-          padding-bottom: 8vw;
-          margin-left: auto;
-          margin-right: auto;
-      }
-
-      h2.OmPannaCotta-SO1 {
-          color: #B53721;
-          text-align: center;
-          font-size: 4vw;
-          font-style: normal;
-          font-family: "AvenirNextCondenced";
-          display: block;
-          width: 80%; 
-          max-width: 388px;
-          height: auto;
-          margin-left: auto;
-          margin-right: auto;
-
-      }
-
-          h2.OmPannaCotta-SO2 {
-              color: #B53721;
-              text-align: center;
-              font-size: 4vw;
-              font-style: normal;
-              font-family: "AvenirNextCondenced";
-              display: block;
-              width: 80%; 
-              max-width: 388px;
-              height: auto;
-              padding-bottom: 8vw;
-              margin-left: auto;
-              margin-right: auto;
-
-      }
-
-      .OmPannaCotta-Mengdetekst {
-        color: #000;
-        text-align: center;
-        font-size: 4vw; 
-        font-style: normal;
-        font-family: "AvenirNextCondenced";
-        width: 80%; 
-        max-width: 388px; 
-        height: auto;
-        padding-bottom: 49px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-                    
-
-
-     }
 
               
 
