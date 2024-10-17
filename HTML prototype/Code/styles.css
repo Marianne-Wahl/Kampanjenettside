@@ -107,13 +107,17 @@ body {
 
   /* Foto splash */
 
-  .Splash { 
+  .SplashDesktop { 
     height: auto;
     width: 100%;
     margin-top: -20%;
     position: absolute;
     align-content: center;
     z-index: 1;
+  }
+
+  .SplashMobile {
+    display: none;
   }
 
     /* Splash Illustrasjoner*/
@@ -255,7 +259,7 @@ body {
           
           .Header {                                                    /* HEADER */ 
 
-            background-color: #B53721;                               /* Bakgrunnsfarge header */ 
+            background-color: #FDECDF;                               /* Bakgrunnsfarge header */ 
             height: 144px;                                             /* Høyde på header */ 
             width: auto;                                               /* Bredde på header */ 
             z-index: 4;                                                /* Plasserer header på toppen av illustrasjoner */ 
@@ -294,8 +298,8 @@ body {
           #Splash {                                                    /* SPLASH SIDE */ 
 
             display: block;                                            /* Boks/ramme/gruppe for alle elementene inkludert på forsiden (splash) */ 
-            height: 739px;                                             /* Høyde på boks */ 
-            padding-bottom: 50px;                                      /* Tomrom mellom boks og neste element */ 
+            height: 189vw;                                             /* Høyde på boks */ 
+            padding-bottom: 13vw;                                      /* Tomrom mellom boks og neste element */ 
 
           }
               
@@ -325,7 +329,7 @@ body {
                       font-family: "AvenirNextCondenced";              /* Font */
                       z-index: 3;                                      /* Plasserer tekst over bilde */ 
                       position: relative;                              /* Posisjon */ 
-                      margin-top: 12vw;                                /* Skaper større tomrom mellom tittel og header */ 
+                      margin-top: 16vw;                                /* Skaper større tomrom mellom tittel og header */ 
 
                     }
                     
@@ -344,18 +348,31 @@ body {
                     
 
                     
-                    .Splash {                                          /* FOTO SPLASH */ 
+                    .SplashDesktop {                                   /* FOTO SPLASH */ 
 
+                      display: none;
                       height: 80%;                                     /* Foto høyde */ 
                       width: 100%;                                     /* Foto bredde */ 
                       margin-top: -250px;                              /* Foto plassering */ 
                       position: absolute;                              /* Posisjon */ 
                       align-content: center;                           /* Midstilt foto */ 
                       z-index: 1;                                      /* Plasserer foto under alle andre elementer */ 
-                      object-fit:cover;                                /* Foto fyller hele definert område og blir beskåret/zoomet inn*/ 
+                      object-fit:cover;                                /* Foto fyller hele definert område */ 
 
                     }
-                    
+
+                    .SplashMobile {
+                      height: 739px;                                   /* Foto høyde */ 
+                      width: 100%;                                     /* Foto bredde */ 
+                      margin-top: -250px;                              /* Foto plassering */ 
+                      position: absolute;                              /* Posisjon */ 
+                      align-content: center;                           /* Midstilt foto */ 
+                      z-index: 1;                                      /* Plasserer foto under alle andre elementer */ 
+                      object-fit:cover;                                /* Foto fyller hele definert område */ 
+                  
+                    }
+
+
 
                                                                        /* ILLUSTRASJONER */ 
                     
@@ -363,11 +380,11 @@ body {
 
                       z-index: 2;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
                       height: auto;                                    /* Høyde på illustrasjon */
-                      width: 200px;                                    /* Bredde på illustrasjon */ 
-                      margin-top: -420px;                              /* Plasserer illustrasjon delvis under header */ 
-                      position: relative;                              /* Posisjon */ 
+                      width: 51vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: -105vw;                              /* Plasserer illustrasjon delvis under header */ 
+                      position: absolute;                              /* Posisjon */ 
                       float: left;                                     /* Plasserer illustrasjon til venstre på siden */ 
-                      object-fit:fill;                                 /* Illustrasjon fyller definerte bredde og høyde */ 
+                      object-fit:cover;                                /* Illustrasjon fyller definerte bredde og høyde */ 
 
                     }
 
@@ -376,9 +393,9 @@ body {
 
                       z-index: 2;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
                       height: auto;                                    /* Høyde på illustrasjon */
-                      width: 250px;                                    /* Bredde på illustrasjon */ 
-                      margin-top: -420px;                              /* Plasserer illustrasjon delvis under header */
-                      position: relative;                              /* Posisjon */ 
+                      width: 53vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: -95vw;                               /* Plasserer illustrasjon delvis under header */
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til høyre*/ 
                       float: right;                                    /* Plasserer illustrasjon til høyre på siden */ 
                       object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
 
@@ -389,12 +406,85 @@ body {
 
                       z-index: 3;                                      /* Plasserer illustrasjon over bilde og andre illustrasjoner, men under tekst */ 
                       height: auto;                                    /* Høyde på illustrasjon */
-                      width: 80px;                                     /* Bredde på illustrasjon */ 
-                      margin-top: -270px;                              /* Plasserer illustrasjon på toppen av venstre illustrasjon */
-                      margin-left: 70px;                               /* Plasserer illustrasjon på toppen av venstre illustrasjon */
+                      width: 17vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: -65vw;                               /* Plasserer illustrasjon på toppen av venstre illustrasjon */
+                      margin-left: 18vw;                               /* Plasserer illustrasjon på toppen av venstre illustrasjon */
                       position: relative;                              /* Posisjon */ 
                       float: left;                                     /* Plasserer illustrasjon til venstre på siden */ 
                       object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+
+                    }
+
+
+                    .LeafMidLeft {                                     /* ILLUSTRASJON - BLAD MID VENSTRE */ 
+
+                      z-index: 2;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 40vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: 60vw;                                /* Plasserer illustrasjon mellom to divs */
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til venstre*/ 
+                      float: left;                                     /* Plasserer illustrasjon til høyre på siden */ 
+                      left: 0px;                                       /* Spesifiserer illustrasjonens plassering til venstre */
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+                      margin-bottom: -50vw;                            /* Forhindrer bilde under å ligge langt nede på siden */
+
+                    }
+
+
+                    .LeafMidRight1 {                                   /* ILLUSTRASJON - BLAD MID HØYRE 1 */ 
+
+                      z-index: 3;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 40vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: 70vw;                                /* Plasserer illustrasjon mellom to divs*/
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til høyre*/ 
+                      float: right;                                    /* Plasserer illustrasjon til høyre på siden */ 
+                      right: 0px;                                      /* Spesifiserer illustrasjonens plassering til høyre */
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+                      margin-bottom: -50vw;                            /* Forhindrer bilde under å ligge langt nede på siden */
+
+                    }
+
+                    .LeafMidRight2 {                                   /* ILLUSTRASJON - BLAD MID HØYRE 2 */ 
+
+                      z-index: 2;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 30vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: 0vw;                                 /* Plasserer illustrasjon mellom to divs */
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til høyre*/ 
+                      float: right;                                    /* Plasserer illustrasjon til høyre på siden */ 
+                      right: 0px;                                      /* Spesifiserer illustrasjonens plassering til høyre */
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+                      margin-bottom: -50vw;                            /* Forhindrer bilde under å ligge langt nede på siden */
+
+                    }
+
+
+                    .StrawberryMidRight {                              /* ILLUSTRASJON - JORDBÆR MID HØYRE */ 
+
+                      z-index: 4;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 30vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: 20vw;                                /* Plasserer illustrasjon mellom to divs*/
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til høyre*/ 
+                      float: right;                                    /* Plasserer illustrasjon til høyre på siden */ 
+                      right: -30vw;                                    /* Spesifiserer illustrasjonens plassering til høyre */
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+                      margin-bottom: -50vw;                            /* Forhindrer bilde under å ligge langt nede på siden */
+
+                    }
+
+                    .FlowerMidRight {                                  /* ILLUSTRASJON - BLOMST MID HØYRE */ 
+
+                      z-index: 2;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 17vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: 10vw;                                /* Plasserer illustrasjon mellom to divs*/
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til høyre*/ 
+                      float: right;                                    /* Plasserer illustrasjon til høyre på siden */ 
+                      right: -5vw;                                     /* Spesifiserer illustrasjonens plassering til høyre */
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+                      margin-bottom: -50vw;                            /* Forhindrer bilde under å ligge langt nede på siden */
 
                     }
 
@@ -402,9 +492,10 @@ body {
 
           #OmPannaCotta {                                              /* OM PRODUKTET */ 
 
-                display: block;                                        /* Boks/ramme/gruppe for alle elementene inkludert på forsiden (splash) */ 
-                height: 230vw;                                         /* Høyde på boks */ 
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */ 
+                height: 240vw;                                         /* Høyde på boks */ 
                 padding-bottom: 10px;                                  /* Tomrom mellom boks og neste element */ 
+                z-index: 2;
 
                }
 
@@ -417,6 +508,7 @@ body {
                       align-content: center;                           /* Midtstilt foto */
                       height: auto;                                    /* Foto høyde */
                       padding-bottom: 30px;                            /* Padding under foto */
+                      margin-top: 0px;
 
                      }
 
@@ -475,7 +567,7 @@ body {
                     }
 
 
-                    .OmPannaCotta-Mengdetekst {                        /* MENGDETEKST */
+                    .Mengdetekst {                                     /* MENGDETEKST */
 
                       color: #000;                                   /* Tekstfarge */
                       text-align: center;                              /* Midstilt tekst */ 
@@ -485,7 +577,7 @@ body {
                       width: 80%;                                      /* Bredde på tekstboks */
                       max-width: 388px;                                /* Maks bredde på tekstboks */
                       height: auto;                                    /* Høyde på tekstboks */
-                      padding-bottom: 49px;                            /* Padding under tekstboks */
+                      padding-bottom: 40px;                            /* Padding under tekstboks */
                       margin-left: auto;                               /* For midtstilling av tekst */
                       margin-right: auto;                              /* For midtstilling av tekst */
       
@@ -517,8 +609,8 @@ body {
 
           #OmFotoKonkurranse {                                         /* OM FOTOKONKURRANSE */ 
 
-            display: block;                                            /* Boks/ramme/gruppe for alle elementene inkludert på forsiden (splash) */
-            height: 700px;                                             /* Høyde på boks */ 
+            display: block;                                            /* Boks/ramme/gruppe for alle elementene relatert til fotokonkurransen */
+            height: 256vw;                                             /* Høyde på boks */ 
             padding-bottom: 10px;                                      /* Tomrom mellom boks og neste element */ 
     
           }
@@ -577,7 +669,7 @@ body {
 
                           cursor: pointer;                             /* Endrer musepekeren */
                           position: absolute;                          /* Posisjon */
-                          top: 35%;
+                          top: 35%;                                    /* For midstille knappen med bildet */
                           height: 12vw;                                /* Høyde på knapp 12vw = ca 48px (i 390px format) */
                           width: 12vw;                                 /* Bredde på knapp 12vw = ca 48px (i 390px format) */
                           background-color: #B53721;                 /* Bakgrunnsfarge */
@@ -596,7 +688,7 @@ body {
 
                           cursor: pointer;                             /* Endrer musepekeren */
                           position: absolute;                          /* Posisjon */
-                          top: 35%;
+                          top: 35%;                                    /* For midstille knappen med bildet */
                           height: 12vw;                                /* Høyde på knapp 12vw = ca 48px (i 390px format) */
                           width: 12vw;                                 /* Bredde på knapp 12vw = ca 48px (i 390px format) */
                           background-color: #B53721;                 /* Bakgrunnsfarge */
@@ -611,7 +703,7 @@ body {
                         }
 
 
-                            button:hover {
+                            button:hover {                             /* KNAPP VED HOVER*/
 
                               background-color: #911912;             /* Bakgrunnsfarge på knapp når musepeker svever (hover) over */
 
@@ -647,14 +739,110 @@ body {
                       width: 80%;                                      /* Bredde på tekstboks */
                       max-width: 388px;                                /* Maks bredde på tekstboks */
                       height: auto;                                    /* Høyde på tekstboks */
-                      padding-bottom: 8vw;                             /* Padding under tekstboks */
+                      padding-bottom: 6vw;                             /* Padding under tekstboks */
                       margin-left: auto;                               /* For midtstilling av tekst */
                       margin-right: auto;                              /* For midtstilling av tekst */
 
+                    }
+
+
+
+          .footer {                                                    /* FOOTER */
+
+            display: block;                                            /* Boks/ramme/gruppe for alle elementene relatert til footeren */
+            background-color: #B78F7E;                               /* Bakgrunnsfarge */
+            height: 51vw;                                              /* Høyde på boks */ 
+            width: auto;                                               /* Bredde på boks */
+            z-index: 2;                                                /* Plasserer footer over illustrasjoner */
+            position: relative;                                        /* Posisjon */
+            padding-top: 11vw;                                         /* Tomrom på innsiden toppen av boksen */
+
+          }
+
+
+                    .LogoFooter {                                      /* FOOTER - LOGO */
+
+                      padding-left: 44px;                              /* Tomrom på venstre side av logo */ 
+                      width: 25vw;                                     /* Logos bredde */               
+                      left: auto;                                      /* Logos plassering på side; venstre */ 
+                      display: block;                                  /* Plasserer logo i en boks */            
+                      padding-bottom: 44px;                            /* Tomrom på innsiden toppen av boksen */
 
                     }
 
+
+                    p.Adresse {                                        /* FOOTER - ADRESSE */
+
+                      float: right;                                    /* Plasserer teksten til høyre på siden */ 
+                      top: -25vw;                                      /* Plasserer teksten høyere opp på siden */
+                      margin-right: 44px;                              /* Tomrom på høyre side */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      font-size: 3vw;                                  /* Skriftstørrelse 3vw = ca 12px (i 390px format)  */
+                      text-align: left;                                /* Venstrestilt tekst */
+                      position: relative;                              /* Posisjon */
+                      margin-top: 0%;                                  /* Ingen tomrom på toppen */
+                      padding-bottom: 0%;                              /* Ingen tomrom på bunn */
+
+                    }
      
+
+                    p.Copyright {                                      /* FOOTER - COPYRIGHT */
+                      
+                      margin-left: 44px;                               /* Tomrom på venstre side */
+                      margin-top: 0;                                   /* Ingen tomrom på toppen */
+                      margin-bottom: 0;                                /* Ingen tomrom på bunn */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      font-size: 3vw;                                  /* Skriftstørrelse 3vw = ca 12px (i 390px format)  */
+                      text-align: left;                                /* Venstrestilt tekst */
+                      float: left;                                     /* Plasserer teksten til venstre på siden */ 
+
+                    }
+
+                                                                       /* ILLUSTRASJONER FOOTER */
+
+                    .LeafLeftFooter {                                  /* ILLUSTRASJON - BLAD VENSTRE */
+
+                      z-index: 1;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 50vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: -135vw;                              /* Plasserer illustrasjon mellom to divs*/
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til venstre*/ 
+                      float: left;                                     /* Plasserer illustrasjon til venstre på siden */ 
+                      left: 0vw;                                       /* Spesifiserer illustrasjonens plassering til venstre */
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+                      margin-bottom: 0vw;                              /* Forhindrer bilde under å ligge langt nede på siden */
+
+                    }
+
+
+                    .LeafRightFooter {                                 /* ILLUSTRASJON - BLAD HØYRE */
+
+                      z-index: 1;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 30vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: -115vw;                              /* Plasserer illustrasjon mellom to divs*/
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til høyre*/ 
+                      float: right;                                    /* Plasserer illustrasjon til høyre på siden */ 
+                      left: 0vw;                                       /* Spesifiserer illustrasjonens plassering til høyre */
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+                      margin-bottom: 0vw;                              /* Forhindrer bilde under å ligge langt nede på siden */
+
+                    }
+
+                    .StrawberryFooter {                                /* ILLUSTRASJON - JORDBÆR */
+
+                      z-index: 1;                                      /* Plasserer illustrasjon over bilde, men under tekst */ 
+                      height: auto;                                    /* Høyde på illustrasjon */
+                      width: 40vw;                                     /* Bredde på illustrasjon */ 
+                      margin-top: -85vw;                               /* Plasserer illustrasjon mellom to divs*/
+                      position: relative;                              /* Posisjon - sikrer at illustrasjonen står til høyre*/ 
+                      float: right;                                    /* Plasserer illustrasjon til høyre på siden */ 
+                      left: 0vw;                                       /* Spesifiserer illustrasjonens plassering til høyre */
+                      object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
+                      margin-bottom: 0vw;                              /* Forhindrer bilde under å ligge langt nede på siden */
+
+                    }
+
   }
 
               
