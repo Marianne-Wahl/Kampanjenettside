@@ -677,7 +677,7 @@ body {                                                                 /* BODY *
                             }
 
 
-                            .SO1OE {                                     /* SPLASH - STØTTEOVERSKRIFT 1 */ 
+                            .SO1OE {                                   /* SPLASH - STØTTEOVERSKRIFT 1 */ 
 
                               padding-top: 100px;                      /* Padding på toppen av tittel */ 
                               color: #B53721;                        /* Tekstfarge */
@@ -693,21 +693,45 @@ body {                                                                 /* BODY *
 
                             }
                     
-            #OmEk {                                                    /* OM EK - Div 1 */ 
+            #OmEk {                                                    /* OM EK - SPLASH */ 
 
               margin-top: 0vw;
               display: block;                                          /* Boks/ramme/gruppe for alle elementene relatert til produktet */
               height: 55vw;                                            /* Høyde på boks */
-              padding-bottom: 10px;                                    /* Tomrom mellom boks og neste element */
+              padding-bottom: 7vw;                                     /* Tomrom mellom boks og neste element */
                 
                 
             }
 
+                            .SplashDesktopOE {                         /* SPLASH - FOTO */
+                            
+                              height: 60vw;                          /* Foto høyde */ 
+                              width: 100%;                           /* Foto bredde */ 
+                              margin-top: -20vw;                     /* Foto plassering */ 
+                              position: absolute;                    /* Posisjon */ 
+                              align-content: center;                 /* Midstilt foto */ 
+                              z-index: 1;                            /* Plasserer foto under alle andre elementer */ 
+                              object-fit:cover;                      /* Foto fyller hele definert område */
 
-            #OmEk1 {                                                   /* OM EK - PARAGRAFER MED BILDE */ 
+                            }
+
+                            .SplashMobileOE {
+
+                              display: none;
+
+                            }
+
+                            .SplashTabletOE {
+
+                              display: none;
+        
+                            }
+
+
+            #OmEkPar {                                                 /* OM EK - PARAGRAFER MED BILDE */ 
 
               display: block;                                          /* Boks/ramme/gruppe for alle elementene relatert til produktet */
-              height: 21vw;                                            /* Høyde på boks */
+              height: 29vw;                                            /* Høyde på boks */
               padding-bottom: 7vw;                                     /* Tomrom mellom boks og neste element */
               padding-top: 7vw;                                        /* Tomrom mellom boks og neste element */
 
@@ -717,7 +741,7 @@ body {                                                                 /* BODY *
             #OmEkNoPhoto {                                             /* OM EK - PARAGRAF UTEN BILDE */ 
 
               display: block;                                          /* Boks/ramme/gruppe for alle elementene relatert til produktet */
-              height: 10vw;                                            /* Høyde på boks */
+              height: 12vw;                                            /* Høyde på boks */
 
 
             }
@@ -725,7 +749,7 @@ body {                                                                 /* BODY *
             #OmEkLastPar {                                             /* OM EK - SISTE PARAGRAF */ 
 
               display: block;                                          /* Boks/ramme/gruppe for alle elementene relatert til produktet */
-              height: 21vw;                                            /* Høyde på boks */
+              height: 29vw;                                            /* Høyde på boks */
               padding-bottom: 7vw;                                     /* Tomrom mellom boks og neste element */
               padding-top: 7vw;                                        /* Tomrom mellom boks og neste element */
               margin-bottom: 7vw;
@@ -739,19 +763,17 @@ body {                                                                 /* BODY *
 
                             color: #000;                             /* Tekstfarge */
                             text-align: left;                          /* Midstilt tekst */ 
-                            font-size: 1.5vw;                          /* Skriftstørrelse */ 
+                            font-size: 1.7vw;                          /* Skriftstørrelse */ 
                             font-style: normal;                        /* Font tynge/stil */
                             font-family: "AvenirNextCondenced";        /* Font */
+                            line-height: 3vw;                          /* Linjeavstand */
                             width: 80%;                                /* Bredde på tekstboks */
                             max-width: 30vw;                           /* Maks bredde på tekstboks */
                             height: auto;                              /* Høyde på tekstboks */
                             padding-bottom: 0px;                       /* Padding under tekstboks */
                             float: left;                               /* Plasserer tekst til høyre på siden */
                             margin-left: 16vw;                         /* Spesifiserer tekst plassering */
-                            z-index: 2;                                /* Plasserer tekst over andre elementer */
                             position: relative;                        /* Posisjon */
-                            top: 0vw;                                  /* Spesifiserer tekst plassering */
-                            line-height: 2.5vw;                        /* Linjeavstand */
                             
                           }
 
@@ -759,19 +781,18 @@ body {                                                                 /* BODY *
 
                             color: #000;                             /* Tekstfarge */
                             text-align: left;                          /* Midstilt tekst */ 
-                            font-size: 1.5vw;                          /* Skriftstørrelse */ 
+                            font-size: 1.7vw;                          /* Skriftstørrelse */ 
                             font-style: normal;                        /* Font tynge/stil */
                             font-family: "AvenirNextCondenced";        /* Font */
+                            line-height: 3vw;                          /* Linjeavstand */
                             width: 80%;                                /* Bredde på tekstboks */
                             max-width: 30vw;                           /* Maks bredde på tekstboks */
                             height: auto;                              /* Høyde på tekstboks */
                             padding-bottom: 0px;                       /* Padding under tekstboks */
                             float: right;                              /* Plasserer tekst til høyre på siden */
                             margin-right: 16vw;                        /* Spesifiserer tekst plassering */
-                            z-index: 2;                                /* Plasserer tekst over andre elementer */
                             position: relative;                        /* Posisjon */
                             top: 0vw;                                  /* Spesifiserer tekst plassering */
-                            line-height: 2.5vw;                        /* Linjeavstand */
                             
                           }
 
@@ -779,9 +800,10 @@ body {                                                                 /* BODY *
 
                             color: #000;                             /* Tekstfarge */
                             text-align: left;                          /* Midstilt tekst */ 
-                            font-size: 1.5vw;                          /* Skriftstørrelse */ 
+                            font-size: 1.7vw;                          /* Skriftstørrelse */ 
                             font-style: normal;                        /* Font tynge/stil */
                             font-family: "AvenirNextCondenced";        /* Font */
+                            line-height: 3vw;                          /* Linjeavstand */
                             width: 100%;                               /* Bredde på tekstboks */
                             max-width: 68%;                            /* Maks bredde på tekstboks */ 
                             height: auto;                              /* Høyde på tekstboks */
@@ -789,25 +811,22 @@ body {                                                                 /* BODY *
                             float: left;                               /* Plasserer tekst til høyre på siden */
                             margin-right: 16vw;                        /* Spesifiserer tekst plassering */
                             margin-left: 16vw;                         /* Spesifiserer tekst plassering */
-                            z-index: 2;                                /* Plasserer tekst over andre elementer */
                             position: relative;                        /* Posisjon */
-                            top: vw;                                   /* Spesifiserer tekst plassering */
-                            line-height: 2.5vw;                        /* Linjeavstand */
                             
                           }
 
                           .PhotoOELeft {                               /* FOTO - OM EK - VENSTRE */
 
-                            width: 80%;                                /* Bredde på tekstboks */
-                            max-width: 30vw;                           /* Maks bredde på tekstboks */
-                            height: auto;                              /* Høyde på tekstboks */
-                            padding-bottom: 0px;                       /* Padding under tekstboks */
-                            float: left;                               /* Plasserer tekst til høyre på siden */
-                            margin-left: 16vw;                         /* Spesifiserer tekst plassering */
-                            z-index: 2;                                /* Plasserer tekst over andre elementer */
+                            width: 29vw;                               /* Bredde på foto */
+                            max-width: 29vw;                           /* Maks bredde på foto */
+                            height: 29vw;                              /* Høyde på foto */
+                            object-fit: cover;                         /* Cropper foto til definert størrelse */
+                            padding-bottom: 0px;                       /* Padding under foto */
+                            float: left;                               /* Plasserer foto til venstre på siden */
+                            margin-left: 16vw;                         /* Spesifiserer foto plassering */
                             position: relative;                        /* Posisjon */
-                            top: 0vw;                                  /* Spesifiserer tekst plassering */
-                            border: 11px solid;                        /* Ramme */
+                            top: 0vw;                                  /* Spesifiserer foto plassering */
+                            border: 1vw solid;                         /* Ramme */
                             border-color: #fff;                      /* Farge på ramme*/
                             
 
@@ -815,16 +834,16 @@ body {                                                                 /* BODY *
 
                           .PhotoOERight {                              /* FOTO - OM EK - HØYRE */
 
-                            width: 80%;                                /* Bredde på tekstboks */
-                            max-width: 30vw;                           /* Maks bredde på tekstboks */
-                            height: auto;                              /* Høyde på tekstboks */
-                            padding-bottom: 0px;                       /* Padding under tekstboks */
-                            float: right;                              /* Plasserer tekst til høyre på siden */
-                            margin-right: 16vw;                        /* Spesifiserer tekst plassering */
-                            z-index: 2;                                /* Plasserer tekst over andre elementer */
+                            width: 29vw;                               /* Bredde på foto */
+                            max-width: 29vw;                           /* Maks bredde på foto */
+                            height: 29vw;                              /* Høyde på foto */
+                            object-fit: cover;                         /* Cropper foto til definert størrelse */
+                            padding-bottom: 0px;                       /* Padding under foto */
+                            float: right;                              /* Plasserer foto til høyre på siden */
+                            margin-right: 16vw;                        /* Spesifiserer foto plassering */
                             position: relative;                        /* Posisjon */
                             top: 0vw;                                  /* Spesifiserer tekst plassering */
-                            border: 11px solid;                        /* Ramme */
+                            border: 1vw solid;                         /* Ramme */
                             border-color: #fff;                      /* Farge på ramme*/
 
                           }
@@ -949,7 +968,7 @@ body {                                                                 /* BODY *
             
                                 height: 60vw;                                    /* Foto høyde */ 
                                 width: 100%;                                     /* Foto bredde */ 
-                                margin-top: -20vw;                              /* Foto plassering */ 
+                                margin-top: -20vw;                               /* Foto plassering */ 
                                 position: absolute;                              /* Posisjon */ 
                                 align-content: center;                           /* Midstilt foto */ 
                                 z-index: 1;                                      /* Plasserer foto under alle andre elementer */ 
@@ -1344,35 +1363,35 @@ body {                                                                 /* BODY *
                             }
           
           
-                            H3.Underoverskrift {                                 /* UNDEROVERSKRIFT */
+                            H3.Underoverskrift {                       /* UNDEROVERSKRIFT */
           
-                              color: #B53721;                                  /* Tekstfarge */
-                              text-align: center;                                /* Midstilt tekst */ 
-                              font-size: 1.5vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
-                              font-style: normal;                                /* Font tyngde/stil */
-                              font-family: "AvenirNextCondenced";                /* Font */
-                              display: block;                                    /* For å unngå at andre elementer legger seg ved siden av teksten */
-                              width: 80%;                                        /* Bredde på tekstboks */
-                              max-width: 35vw;                                   /* Maks bredde på tekstboks */
-                              height: auto;                                      /* Høyde på tekstboks */
-                              padding-bottom: 6vw;                               /* Padding under tekstboks */
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.5vw;                        /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                              font-style: normal;                      /* Font tyngde/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av teksten */
+                              width: 80%;                              /* Bredde på tekstboks */
+                              max-width: 35vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              padding-bottom: 6vw;                     /* Padding under tekstboks */
                               padding-right: 13vw;
                               float: right;
           
                             }
           
           
-                            .Mengdetekst {                                       /* MENGDETEKST */
+                            .Mengdetekst {                             /* MENGDETEKST */
           
-                              color: #000;                                     /* Tekstfarge */
-                              text-align: center;                                /* Midstilt tekst */ 
-                              font-size: 1.5vw;                                  /* Skriftstørrelse 1.5vw = ca 18px (i 1280px format) */ 
-                              font-style: normal;                                /* Font tynge/stil */
-                              font-family: "AvenirNextCondenced";                /* Font */
-                              width: 80%;                                        /* Bredde på tekstboks */
-                              max-width: 30vw;                                   /* Maks bredde på tekstboks */
-                              height: auto;                                      /* Høyde på tekstboks */
-                              padding-bottom: 0px;                               /* Padding under tekstboks */
+                              color: #000;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.5vw;                        /* Skriftstørrelse 1.5vw = ca 18px (i 1280px format) */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 80%;                              /* Bredde på tekstboks */
+                              max-width: 30vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              padding-bottom: 0px;                     /* Padding under tekstboks */
                               float: right;
                               margin-right: 16vw;
                               margin-top: -5vw;
@@ -1479,7 +1498,171 @@ body {                                                                 /* BODY *
                                 margin-bottom: 0vw;                    /* Forhindrer bilde under å ligge langt nede på siden */
                   
                               }
-          
+
+
+             #OmEk {                                                   /* OM EK - SPLASH */ 
+
+              margin-top: 0vw;
+              display: block;                                          /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+              height: 60vw;                                            /* Høyde på boks */
+              max-height: 60vw;
+              overflow-y: hidden;
+              padding-bottom: 10px;                                    /* Tomrom mellom boks og neste element */
+              position: relative;
+
+                
+                
+            }
+
+                    .SplashDesktopOE {
+
+                       display: none;
+
+                    } 
+
+
+                     .SplashTabletOE {
+
+                      height: 100vw;                          /* Foto høyde */ 
+                      width: 100%;                           /* Foto bredde */ 
+                      margin-top: -40vw;                     /* Foto plassering */ 
+                      position: absolute;                    /* Posisjon */ 
+                      align-content: center;                 /* Midstilt foto */ 
+                      z-index: 1;                            /* Plasserer foto under alle andre elementer */ 
+                      object-fit:cover;                      /* Foto fyller hele definert område */
+
+                    }
+
+
+                    .SplashMobileOE {
+
+                      display: none;
+
+                    }
+
+
+            #OmEkPar {                                                 /* OM EK - PARAGRAFER MED BILDE */ 
+
+              display: block;                                          /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+              height: 29vw;                                            /* Høyde på boks */
+              padding-bottom: 7vw;                                     /* Tomrom mellom boks og neste element */
+              padding-top: 7vw;                                        /* Tomrom mellom boks og neste element */
+
+
+            }
+
+            #OmEkNoPhoto {                                             /* OM EK - PARAGRAF UTEN BILDE */ 
+
+              display: block;                                          /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+              height: 12vw;                                            /* Høyde på boks */
+
+
+            }
+
+            #OmEkLastPar {                                             /* OM EK - SISTE PARAGRAF */ 
+
+              display: block;                                          /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+              height: 29vw;                                            /* Høyde på boks */
+              padding-bottom: 7vw;                                     /* Tomrom mellom boks og neste element */
+              padding-top: 7vw;                                        /* Tomrom mellom boks og neste element */
+              margin-bottom: 7vw;
+
+
+            }
+
+
+
+                           .MengdetekstOELeft {                        /* MENGDETEKST - OM EK - VENSTRE */
+
+                            color: #000;                             /* Tekstfarge */
+                            text-align: left;                          /* Midstilt tekst */ 
+                            font-size: 1.7vw;                          /* Skriftstørrelse */ 
+                            font-style: normal;                        /* Font tynge/stil */
+                            font-family: "AvenirNextCondenced";        /* Font */
+                            line-height: 3vw;                          /* Linjeavstand */
+                            width: 80%;                                /* Bredde på tekstboks */
+                            max-width: 30vw;                           /* Maks bredde på tekstboks */
+                            height: auto;                              /* Høyde på tekstboks */
+                            padding-bottom: 0px;                       /* Padding under tekstboks */
+                            float: left;                               /* Plasserer tekst til høyre på siden */
+                            margin-left: 16vw;                         /* Spesifiserer tekst plassering */
+                            z-index: 2;                                /* Plasserer tekst over andre elementer */
+                            position: relative;                        /* Posisjon */
+                            
+                          }
+
+                          .MengdetekstOERight {                        /* MENGDETEKST - OM EK - HØYRE */
+
+                            color: #000;                             /* Tekstfarge */
+                            text-align: left;                          /* Midstilt tekst */ 
+                            font-size: 1.7vw;                          /* Skriftstørrelse */ 
+                            font-style: normal;                        /* Font tynge/stil */
+                            font-family: "AvenirNextCondenced";        /* Font */
+                            line-height: 3vw;                          /* Linjeavstand */
+                            width: 80%;                                /* Bredde på tekstboks */
+                            max-width: 30vw;                           /* Maks bredde på tekstboks */
+                            height: auto;                              /* Høyde på tekstboks */
+                            padding-bottom: 0px;                       /* Padding under tekstboks */
+                            float: right;                              /* Plasserer tekst til høyre på siden */
+                            margin-right: 16vw;                        /* Spesifiserer tekst plassering */
+                            z-index: 2;                                /* Plasserer tekst over andre elementer */
+                            position: relative;                        /* Posisjon */
+                            top: 0vw;                                  /* Spesifiserer tekst plassering */
+                            
+                          }
+
+                          .MengdetekstUFoto {                          /* MENGDETEKST - OM EK - UTEN FOTO */
+
+                            color: #000;                             /* Tekstfarge */
+                            text-align: left;                          /* Midstilt tekst */ 
+                            font-size: 1.7vw;                          /* Skriftstørrelse */ 
+                            font-style: normal;                        /* Font tynge/stil */
+                            font-family: "AvenirNextCondenced";        /* Font */
+                            line-height: 3vw;                          /* Linjeavstand */
+                            width: 100%;                               /* Bredde på tekstboks */
+                            max-width: 68%;                            /* Maks bredde på tekstboks */ 
+                            height: auto;                              /* Høyde på tekstboks */
+                            padding-bottom: 0px;                       /* Padding under tekstboks */
+                            float: left;                               /* Plasserer tekst til høyre på siden */
+                            margin-right: 16vw;                        /* Spesifiserer tekst plassering */
+                            margin-left: 16vw;                         /* Spesifiserer tekst plassering */
+                            z-index: 2;                                /* Plasserer tekst over andre elementer */
+                            position: relative;                        /* Posisjon */
+                            
+                          }
+
+                          .PhotoOELeft {                               /* FOTO - OM EK - VENSTRE */
+
+                            width: 29vw;                               /* Bredde på foto */
+                            max-width: 29vw;                           /* Maks bredde på foto */
+                            height: 29vw;                              /* Høyde på foto */
+                            object-fit: cover;                         /* Cropper foto til definert størrelse */
+                            padding-bottom: 0px;                       /* Padding under foto */
+                            float: left;                               /* Plasserer foto til venstre på siden */
+                            margin-left: 16vw;                         /* Spesifiserer foto plassering */
+                            position: relative;                        /* Posisjon */
+                            top: 0vw;                                  /* Spesifiserer foto plassering */
+                            border: 11px solid;                        /* Ramme */
+                            border-color: #fff;                      /* Farge på ramme*/
+                            
+
+                          }
+
+                          .PhotoOERight {                              /* FOTO - OM EK - HØYRE */
+
+                            width: 29vw;                               /* Bredde på foto */
+                            max-width: 29vw;                           /* Maks bredde på foto */
+                            height: 29vw;                              /* Høyde på foto */
+                            object-fit: cover;                         /* Cropper foto til definert størrelse */
+                            padding-bottom: 0px;                       /* Padding under foto */
+                            float: right;                              /* Plasserer foto til høyre på siden */
+                            margin-right: 16vw;                        /* Spesifiserer foto plassering */
+                            position: relative;                        /* Posisjon */
+                            top: 0vw;                                  /* Spesifiserer tekst plassering */
+                            border: 11px solid;                        /* Ramme */
+                            border-color: #fff;                      /* Farge på ramme*/
+
+                          }
           
                     
 } 
@@ -2079,6 +2262,156 @@ body {                                                                 /* BODY *
                       left: 0vw;                                       /* Spesifiserer illustrasjonens plassering til høyre */
                       object-fit: fill;                                /* Illustrasjon fyller definerte bredde og høyde */ 
                       margin-bottom: 0vw;                              /* Forhindrer bilde under å ligge langt nede på siden */
+
+                    }
+
+
+
+      #OmEk {                                                          /* OM EK - SPLASH */ 
+
+        margin-top: 0vw;
+        display: block;                                                /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+        height: 160vw;                                                 /* Høyde på boks */
+        max-height: 160vw;
+        overflow-y: hidden;
+        padding-bottom: 10px;                                          /* Tomrom mellom boks og neste element */
+        position: relative;                                            /* Posisjon */
+          
+          
+      }
+
+                    .SplashMobileOE {                                  /* OM EK - SPLASH - FOTO - MOBIL */ 
+                      height: 200vw;                                   /* Foto høyde */ 
+                      width: 100%;                                     /* Foto bredde */ 
+                      margin-top: -80vw;                               /* Foto plassering */ 
+                      position: absolute;                              /* Posisjon */ 
+                      align-content: center;                           /* Midstilt foto */ 
+                      z-index: 1;                                      /* Plasserer foto under alle andre elementer */ 
+                      object-fit:cover;                                /* Foto fyller hele definert område */
+                  
+                    }
+                    
+                    .SplashTabletOE {
+
+                      display: none;
+
+                    }
+
+                    .SplashDesktopOE {
+
+                      display: none;
+
+                    }
+
+
+
+      #OmEkPar {                                                       /* OM EK - PARAGRAFER MED BILDE */ 
+
+        display: block;                                                /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+        height: 150vw;                                                 /* Høyde på boks */
+        padding-bottom: 10vw;                                          /* Tomrom mellom boks og neste element */
+        padding-top: 7vw;                                              /* Tomrom mellom boks og neste element */
+
+
+      }
+
+      #OmEkNoPhoto {                                                   /* OM EK - PARAGRAF UTEN BILDE */ 
+
+        display: block;                                                /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+        height: 35vw;                                                  /* Høyde på boks */
+        margin-bottom: 14vw;
+        margin-top: -5vw;
+
+
+      }
+
+      #OmEkLastPar {                                                   /* OM EK - SISTE PARAGRAF */ 
+
+        display: block;                                                /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+        height: 135vw;                                                 /* Høyde på boks */
+        padding-bottom: 7vw;                                           /* Tomrom mellom boks og neste element */
+        padding-top: 7vw;                                              /* Tomrom mellom boks og neste element */
+        margin-bottom: 35vw;
+
+
+      }
+
+
+
+                     .MengdetekstOELeft {                              /* MENGDETEKST - OM EK - VENSTRE */
+
+                      color: #000;                                   /* Tekstfarge */
+                      text-align: left;                                /* Midstilt tekst */ 
+                      font-size: 4vw;                                  /* Skriftstørrelse */ 
+                      font-style: normal;                              /* Font tynge/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      line-height: 6vw;                                /* Linjeavstand */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 0px;                             /* Padding under tekstboks */
+                      margin-left: auto;                               /* Midstiller tekst på siden */
+                      margin-right: auto;                              /* Midstiller tekst på siden */
+                      position: relative;                              /* Posisjon */
+                      
+                    }
+
+                    .MengdetekstOERight {                              /* MENGDETEKST - OM EK - HØYRE */
+
+                      color: #000;                                   /* Tekstfarge */
+                      text-align: left;                                /* Midstilt tekst */ 
+                      font-size: 4vw;                                  /* Skriftstørrelse */ 
+                      font-style: normal;                              /* Font tynge/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      line-height: 6vw;                                /* Linjeavstand */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 0px;                             /* Padding under tekstboks */
+                      margin-left: auto;                               /* Midstiller tekst på siden */
+                      margin-right: auto;                              /* Midstiller tekst på siden */
+                      position: relative;                              /* Posisjon */
+                      top: 0vw;                                        /* Spesifiserer tekst plassering */
+                      
+                    }
+
+                    .MengdetekstUFoto {                                /* MENGDETEKST - OM EK - UTEN FOTO */
+
+                      color: #000;                                   /* Tekstfarge */
+                      text-align: left;                                /* Midstilt tekst */ 
+                      font-size: 4vw;                                  /* Skriftstørrelse */ 
+                      font-style: normal;                              /* Font tynge/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      line-height: 6vw;                                /* Linjeavstand */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 388px;                                /* Maks bredde på tekstboks */ 
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 0px;                             /* Padding under tekstboks */
+                      margin-right: auto;                              /* Midstiller tekst på siden */
+                      margin-left: auto;                               /* Midstiller tekst på siden */
+                      position: relative;                              /* Posisjon */
+
+                      
+                    }
+
+                    .PhotoOELeft {                                     /* FOTO - OM EK - VENSTRE */
+
+                      width: 100%;                                     /* Bredde på foto */
+                      height: 76vw;                                    /* Høyde på foto */
+                      object-fit: cover;                               /* Cropper foto til definert størrelse */
+                      padding-bottom: 15vw;                            /* Padding under foto */
+                      position: relative;                              /* Posisjon */
+                      
+
+                    }
+
+                    .PhotoOERight {                                    /* FOTO - OM EK - HØYRE */
+
+                      width: 100%;                                     /* Bredde på foto */
+                      height: 76vw;                                    /* Høyde på foto */
+                      object-fit: cover;                               /* Cropper foto til definert størrelse */
+                      padding-bottom: 15vw;                            /* Padding under foto */
+                      position: relative;                              /* Posisjon */
 
                     }
 
