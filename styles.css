@@ -368,7 +368,7 @@ body {                                                                 /* BODY *
                               margin-bottom: 0px;                      /* Tomrom under knappene */
                               display:grid;                            /* For midtstilling av knapper */
                               align-content: space-evenly;             /* For spesifisering av midstilling av tekst i knapp */
-                              box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                              box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                               float: right;                            /* Plasserer knappene til høyre på siden */
                               right: -32vw;                            /* Spesifiserer knappenes plassering */
                               margin-top: 0vw;                         /* Tomrom over knappene */
@@ -395,7 +395,7 @@ body {                                                                 /* BODY *
                             margin-bottom: 50px;                       /* Tomrom mellom knappene */
                             display:grid;                              /* For midtstilling av knapper */
                             align-content: space-evenly;               /* For spesifisering av midstilling av tekst i knapp */
-                            box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);     /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                            box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);     /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                             float: right;                              /* Plasserer knappen til høyre på siden */
                             margin-top: -4vw;                          /* Spesifiserer knappens plassering */
 
@@ -853,7 +853,7 @@ body {                                                                 /* BODY *
 
                           }
 
-              .container {                                             /* BESTILL - CONTAINER */
+              .containerB {                                             /* BESTILL - CONTAINER */
 
                 display: flex;                                         /* Lager et 2x2 rutenett basert på divene under */
                 flex-direction: column;                                /* Lager et 2x2 rutenett basert på divene under */
@@ -968,7 +968,7 @@ body {                                                                 /* BODY *
                             margin-left: 5vw;                          /* Spesifiserer knappenes plassering */
                             margin-bottom: 1vw;                        /* Tomrom under knappene */
                             display: block;                            /* For midtstilling av knapper */
-                            box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                            box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                             float: right;                              /* Plasserer knappene til høyre på siden */
                             margin-top: 0vw;                           /* Tomrom over knappene */
 
@@ -983,6 +983,411 @@ body {                                                                 /* BODY *
                             margin-top: -1vw;                          /* Spesifiserer strekens plassering */
 
                           }
+
+
+              #SommerensNyhet {                                        /* SOMMERENS NYHET - SPLASH */
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                height: 20vw;                                          /* Høyde på boks */
+                padding-bottom: 8vw;                                   /* Tomrom mellom boks og neste element */
+                
+
+              }
+
+              .containerSN {                                           /* SOMMERENS NYHET - CONTAINER */
+
+                display: flex;                                         /* Splitter boksen i to deler */
+                flex-direction: row;                                   /* Splitter boksen i to deler vannrett */
+                height: 40vw;                                          /* Høyde på boks */
+                width: 100%;                                           /* Bredde på boks */
+
+              }
+
+
+              #PannaCottaFoto{                                         /* SOMMERENS NYHET - FOTO AV PRODUKT */
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                height: auto;                                          /* Høyde på boks */
+                width: 100%;                                           /* Bredde på boks */
+                padding-bottom: 7vw;                                   /* Tomrom mellom boks og neste element */
+                
+              }
+
+
+              #PannaCottaInfo{                                         /* SOMMERENS NYHET - PRODUKT */
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                height: auto;                                          /* Høyde på boks */
+                width: 100%;                                           /* Bredde på boks */
+                padding-bottom: 7vw;                                   /* Tomrom mellom boks og neste element */
+
+              }
+
+
+                            .OSN {                                     /* SOMMERENS NYHET - PRODUKT OVERSKRIFT */ 
+                        
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 4vw;                          /* Skriftstørrelse 13vw = ca 52px (i 390px format) */ 
+                              font-family: "relation-two";             /* Font */ 
+                              font-style: normal;                      /* Font stil */
+                              margin-bottom: -2vw;                     /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */ 
+                              margin-top: -6vw;                        /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */ 
+                              margin-right: 16vw;                      /* Spesifiserer tekst plassering */
+                              margin-left: 4vw;                        /* Spesifiserer tekst plassering */
+                              top: 5.5vw;                              /* Spesifiserer tekst plassering */
+                              position: relative;                      /* Posisjon */
+
+                            }
+
+
+                            .SO1SN {                                   /* SOMMERENS NYHET - PRODUKT STØTTEOVERSKRIFT 1 */ 
+
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.5vw;                        /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                              font-style: normal;                      /* Font tyngde/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              margin-right: 16vw;                      /* Spesifiserer tekst plassering */
+                              margin-left: 4vw;                        /* Spesifiserer tekst plassering */
+                              position: relative;                      /* Posisjon */
+                            
+                            }
+
+
+                            .SO2SN {                                   /* SOMMERENS NYHET - PRODUKT STØTTEOVERSKRIFT 2 */ 
+
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.5vw;                        /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                              font-style: normal;                      /* Font tyngde/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              margin-right: 16vw;                      /* Spesifiserer tekst plassering */
+                              margin-left: 4vw;                        /* Spesifiserer tekst plassering */
+                              top: 6.5vw;                              /* Spesifiserer tekst plassering */
+                              margin-bottom: 5vw;                      /* Tomrom mellom tekst og neste element */
+                              position: relative;                      /* Posisjon */
+
+                            }
+
+
+                            .buttonSN {                                /* SOMMERENS NYHET - PRODUKT - KNAPP */
+                        
+                              cursor: pointer;                         /* Endrer musepekeren */
+                              background-color: #B53721;             /* Bakgrunnsfarge */
+                              color: #FDECDF;                        /* Tekstfarge */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              font-size: 1vw;                          /* Skriftstørrelse */
+                              text-align: center;                      /* Plasserer teksten til venstre */
+                              border: none;                            /* Ingen ramme */
+                              border-radius: 1vw;                      /* Avrundede hjørner */
+                              width: 29vw;                             /* Bredden på knappen */
+                              height: 3vw;                             /* Høyden på knappen */
+                              margin-right: 16vw;                      /* Spesifiserer knappenes plassering */
+                              margin-left: 4.3vw;                      /* Spesifiserer knappenes plassering */
+                              margin-bottom: 1vw;                      /* Tomrom under knappene */
+                              box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                              margin-top: 0vw;                         /* Tomrom over knappene */
+                              z-index: 2;                              /* Plasserer knappen over bilde */
+                              position: relative;                      /* Posisjon */
+                              top: 10vw;                               /* Spesifiserer knappenes plassering */
+                          
+                            }
+
+
+                            .MengdetekstSN {                           /* SOMMERENS NYHET - MENGDETEKST */
+
+                              color: #000;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.5vw;                        /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 80%;                              /* Bredde på tekstboks */
+                              max-width: 30vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              padding-bottom: 0px;                     /* Padding under tekstboks */
+                              margin-right: 16vw;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekstens plassering */
+                              margin-top: -5vw;                        /* Spesifiserer tekst plassering */
+                              z-index: 2;                              /* Plasserer tekst oppå foto */
+                              position: relative;                      /* Posisjon */
+                              top: 9vw;                                /* Spesifiserer tekstens plassering */
+                            }
+
+
+              #jordbær {                                               /* SOMMERENS NYHET - YTLIGERE INFO / JORDBÆR FOTO */
+
+                height: 75vw;                                          /* Høyde på boks */
+                padding-bottom: 5vw;                                   /* Tomrom mellom boks og neste element */
+
+              }
+
+
+                            .jordbærFoto {                             /* SOMMERENS NYHET - JORDBÆR FOTO */
+
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av eller oppå bildet */
+                              height: 55.5vw;                          /* Foto høyde */ 
+                              width: 100%;                             /* Foto bredde */  
+                              position: relative;                      /* Posisjon */ 
+                              align-content: center;                   /* Midstilt foto */ 
+                              z-index: 1;                              /* Plasserer foto under alle andre elementer */ 
+                              object-fit:cover;                        /* Foto fyller hele definert område */
+                              padding-top: 9vw;                        /* Spesifiserer tekstens på bildets plassering */
+                              padding-bottom: 9vw;                     /* Spesifiserer tekstens på bildets plassering */
+
+                            }
+
+
+                            .jordbærTekst {                            /* SOMMERENS NYHET - JORDBÆR FOTO TEKST */
+
+                              color: #FFF;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 2vw;                          /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 100%;                             /* Bredde på tekstboks */
+                              max-width: 50vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              margin-right: auto;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekst plassering */
+                              margin-top: auto;                        /* Spesifiserer tekst plassering */
+                              margin-bottom: auto;                     /* Spesifiserer tekst plassering */
+                              z-index: 2;                              /* Plasserer tekst oppå foto */
+                              position: relative;                      /* Posisjon */
+                              top: -40vw;                              /* Spesifiserer tekst plassering */
+                            }
+
+
+              .OSNI {                                                  /* SOMMERENS NYHET - INGREDIENSER - UNDEROVERSKRIFT */ 
+
+                color: #B53721;                                      /* Tekstfarge */ 
+                text-align: center;                                    /* Midstilt tekst */ 
+                font-size: 5vw;                                        /* Skriftstørrelse */ 
+                font-family: "relation-two";                           /* Font*/ 
+                font-style: normal;                                    /* Font tyngde/stil */ 
+                z-index: 3;                                            /* Plasserer tekst over bilde */ 
+                margin-top: -1vw;                                      /* Plasserer støtteoverskrift over nærmere overskriften / mindre linjeavstand */ 
+                margin-bottom: -1.5vw;                                 /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */ 
+                position: relative;                                    /* Posisjon */ 
+                margin-left: auto;                                     /* Sentrerer teksten på siden */ 
+                margin-right: auto;                                    /* Sentrerer teksten på siden */ 
+
+              }
+
+
+              .containerSNI {                                          /* SOMMERENS NYHET - INGREDIENSER - CONTAINER */
+
+                margin-top: 5vw;
+                display: flex;                                         /* Lager et 3x2 rutenett basert på divene under */
+                flex-direction: column;                                /* Lager et 3x2 rutenett basert på divene under */
+                flex-direction: row;                                   /* Lager et 3x2 rutenett basert på divene under */
+                flex-wrap: wrap;                                       /* Plasserer automatisk siste element til venstre, under første på rutenettet */
+                width: 100%;                                           /* Bredde på container */
+                justify-content: space-between;                        /* Samme bredde mellom hvert element */
+                align-content: center;                                 /* Plasserer elementer med midtstilt utgangspunkt */
+                margin-bottom: 16vw;                                   /* Tomrom etter container */
+
+              }
+
+
+              .fløte {                                                 /* SOMMERENS NYHET - INGREDIENSER - FLØTE */
+
+                height: 32vw;                                          /* Boks høyde */
+                padding-bottom: 2vw;                                   /* Tomrom mellom foto og foto under */
+
+              }
+
+
+              .sukker {                                                /* SOMMERENS NYHET - INGREDIENSER - SUKKER */
+
+                height: 32vw;                                          /* Boks høyde */
+                padding-bottom: 2vw;                                   /* Tomrom mellom foto og foto under */
+
+              }
+
+
+              .egg {                                                   /* SOMMERENS NYHET - INGREDIENSER - EGG */
+
+                height: 32vw;                                          /* Boks høyde */
+                padding-bottom: 2vw;                                   /* Tomrom mellom foto og foto under */
+
+              }
+
+
+              .vanilje {                                               /* SOMMERENS NYHET - INGREDIENSER - VANILJE */
+
+                height: 32vw;                                          /* Boks høyde */
+
+              }
+
+
+              .sitrus {                                                /* SOMMERENS NYHET - INGREDIENSER - SITRUS */
+
+                height: 32vw;                                          /* Boks høyde */
+
+              }
+
+
+              .jordbær {                                               /* SOMMERENS NYHET - INGREDIENSER - JORDBÆR */
+
+                height: 32vw;                                          /* Boks høyde */
+
+              }
+
+
+                            .ingredienser {                            /* SOMMERENS NYHET - INGREDIENSER - FOTO */
+
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av eller oppå bildet */
+                              height: 32vw;                            /* Foto høyde */ 
+                              width: 100%;                             /* Foto bredde */  
+                              position: relative;                      /* Posisjon */ 
+                              align-content: center;                   /* Midstilt foto */ 
+                              z-index: 1;                              /* Plasserer foto under alle andre elementer */ 
+                              object-fit:cover;                        /* Foto fyller hele definert område */
+
+                            }
+
+
+                            .ingredienserTekst {                       /* SOMMERENS NYHET - INGREDIENSER - TEKST */
+
+                              color: #FFF;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 2.5vw;                        /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 100%;                             /* Bredde på tekstboks */
+                              max-width: 50vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              margin-right: auto;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekst plassering */
+                              margin-top: auto;                        /* Spesifiserer tekst plassering */
+                              margin-bottom: auto;                     /* Spesifiserer tekst plassering */
+                              z-index: 2;                              /* Plasserer tekst oppå foto */
+                              position: relative;                      /* Posisjon */
+                              top: -5vw;                               /* Spesifiserer tekst plassering */
+                            }
+              
+
+                .containerSNN {                                        /* SOMMERENS NYHET - NÆRINGSINNHOLD - CONTAINER */
+
+                  display: flex;                                       /* Splitter boksen i to deler */
+                  flex-direction: row;                                 /* Splitter boksen i to deler vannrett */
+                  height: 40vw;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+  
+                }
+
+
+                .TekstSNN {                                            /* SOMMERENS NYHET - NÆRINGSINNHOLD - TEKST */
+
+                  height: auto;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+
+                }
+
+
+                        .UnderoverskriftSNN {                          /* SOMMERENS NYHET - NÆRINGSINNHOLD - UNDEROVERSKRIFT */
+
+                          color: #B53721;                            /* Tekstfarge */
+                          text-align: left;                            /* Midstilt tekst */ 
+                          font-size: 4vw;                              /* Skriftstørrelse */ 
+                          font-family: "relation-two";                 /* Font */ 
+                          font-style: normal;                          /* Font stil */
+                          margin-left: 16vw;                           /* Spesifiserer tekst plassering */
+                          position: relative;                          /* Posisjon */
+                          margin-bottom: 0vw;                          /* Spesifiserer tekst plassering */
+                          margin-top: 0vw;                             /* Spesifiserer tekst plassering */
+
+                        }
+
+
+                        .MengdetekstSNN {                              /* SOMMERENS NYHET - NÆRINGSINNHOLD - MENGDETEKST */
+
+                          color: #B53721;                            /* Tekstfarge */
+                          text-align: left;                            /* Midstilt tekst */ 
+                          font-size: 1.5vw;                            /* Skriftstørrelse */ 
+                          font-family: "AvenirNextCondenced";          /* Font */ 
+                          font-style: normal;                          /* Font stil */
+                          margin-left: 16vw;                           /* Spesifiserer tekst plassering */
+                          position: relative;                          /* Posisjon */
+                          margin-top: 0vw;                             /* Spesifiserer tekst plassering */
+
+                        }
+
+
+                .TabellSNN {                                           /* SOMMERENS NYHET - TABELL */
+
+                  height: auto;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+                  
+                }
+
+
+                        .table {                                       /* SOMMERENS NYHET - TABELL - UTSEENDE */
+
+                          color: #B53721;                            /* Tekst farge */
+                          font-family: "AvenirNextCondenced";          /* Font */
+                          font-size: 1.5vw;                            /* Skriftstørrelse */
+                          border-collapse: collapse;                   /* Fjerner tomrom mellom kolonnene */
+                          border: none;                                /* Ingen ramme */
+
+                        }
+
+
+                        td {                                           /* SOMMERENS NYHET - TABELL - INNHOLD */
+
+                          padding-right: 10vw;                         /* Spesifiserer tekst plassering */
+                          padding-left: 1vw;                           /* Spesifiserer tekst plassering */
+                          padding-top: 0.5vw;                          /* Spesifiserer tekst plassering */
+                          padding-bottom: 0.5vw;                       /* Spesifiserer tekst plassering */
+                          text-align: left;                            /* Venstrestilt tekst */
+                          
+                        }
+
+
+                        td:last-child {                                /* SOMMERENS NYHET - TABELL - INNHOLD - NUMMER */
+
+                          text-align: right;                           /* Høyrestilt tekst */
+                          padding-left: 10vw;                          /* Spesifiserer tekst plassering */
+                          padding-right: 1vw;                          /* Spesifiserer tekst plassering */
+                      }
+
+
+                      tr:nth-child(odd) {                              /* SOMMERENS NYHET - TABELL - ANNENHVER LINJE */
+
+                        background-color: #fff;                      /* Bakgrunnsfarge på annenhver linje i tabellen */
+                      
+                      }
+
+
+          #buttonSingelSN {                                            /* SOMMERENS NYHET - SINGEL KNAPP NEDERST PÅ SIDEN */
+
+            height: 10vw;                                              /* Høyde på boks */
+            padding-bottom: 5vw;                                       /* Tomrom mellom boks og footer */
+            display: block;                                            /* Boks/ramme/gruppe for knappen */
+
+          }
+
+                      .buttonSingelSN {                                /* SOMMERENS NYHET - SINGEL KNAPP NEDERST PÅ SIDEN - SPESIFIKASJONER */
+
+
+                        cursor: pointer;                               /* Endrer musepekeren */
+                        background-color: #B53721;                   /* Bakgrunnsfarge */
+                        color: #FDECDF;                              /* Tekstfarge */
+                        font-family: "AvenirNextCondenced";            /* Font */
+                        font-size: 1.5vw;                              /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                        border-radius: 1vw;                            /* Avrundede hjørner */
+                        border: none;                                  /* Ingen ramme */
+                        width: 40vw;                                   /* Bredden på knappen */
+                        height: 4vw;                                   /* Høyden på knappen */
+                        position: relative;                            /* Posisjon */
+                        display: block;                                /* Hindrer andre elementer i å forstyrre knappens plassering */
+                        margin-right: auto;                            /* Midstiller knappen på siden */
+                        margin-left: auto;                             /* Midstiller knappen på siden */
+                        box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                      
+                      }
+                      
 
               }
 
@@ -1350,7 +1755,7 @@ body {                                                                 /* BODY *
                               margin-bottom: 0px;                                /* Tomrom mellom knappene */
                               display:grid;                                      /* For midtstilling av knapper */
                               align-content: space-evenly;                       /* For spesifisering av midstilling av tekst i knapp */
-                              box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                              box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                               float: right;
                               right: -32vw;
                               margin-top: 0vw;
@@ -1377,7 +1782,7 @@ body {                                                                 /* BODY *
                             margin-bottom: 50px;                                 /* Tomrom mellom knappene */
                             display:grid;                                        /* For midtstilling av knapper */
                             align-content: space-evenly;                         /* For spesifisering av midstilling av tekst i knapp */
-                            box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);      /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                            box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);      /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                             float: right;
                             margin-top: -4vw;
                         }
@@ -1924,7 +2329,7 @@ body {                                                                 /* BODY *
                             margin-left: 5vw;                          /* Spesifiserer knappenes plassering */
                             margin-bottom: 2vw;                        /* Tomrom under knappene */
                             display: block;                            /* For midtstilling av knapper */
-                            box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                            box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                             float: right;                              /* Plasserer knappene til høyre på siden */
                             margin-top: 0vw;                           /* Tomrom over knappene */
 
@@ -1939,8 +2344,409 @@ body {                                                                 /* BODY *
                             margin-top: -1vw;                          /* Spesifiserer strekens plassering */
 
                           }
-          
-                    
+
+              #SommerensNyhet {                                        /* SOMMERENS NYHET - SPLASH */
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                height: 20vw;                                          /* Høyde på boks */
+                padding-bottom: 8vw;                                   /* Tomrom mellom boks og neste element */
+                
+
+              }
+
+              .containerSN {                                           /* SOMMERENS NYHET - CONTAINER */
+
+                display: flex;                                         /* Splitter boksen i to deler */
+                flex-direction: row;                                   /* Splitter boksen i to deler vannrett */
+                height: 40vw;                                          /* Høyde på boks */
+                width: 100%;                                           /* Bredde på boks */
+
+              }
+
+
+              #PannaCottaFoto{                                         /* SOMMERENS NYHET - FOTO AV PRODUKT */
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                height: auto;                                          /* Høyde på boks */
+                width: 100%;                                           /* Bredde på boks */
+                padding-bottom: 7vw;                                   /* Tomrom mellom boks og neste element */
+                
+              }
+
+
+              #PannaCottaInfo{                                         /* SOMMERENS NYHET - PRODUKT */
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                height: auto;                                          /* Høyde på boks */
+                width: 100%;                                           /* Bredde på boks */
+                padding-bottom: 7vw;                                   /* Tomrom mellom boks og neste element */
+
+              }
+
+
+                            .OSN {                                     /* SOMMERENS NYHET - PRODUKT OVERSKRIFT */ 
+                        
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 4vw;                          /* Skriftstørrelse 13vw = ca 52px (i 390px format) */ 
+                              font-family: "relation-two";             /* Font */ 
+                              font-style: normal;                      /* Font stil */
+                              margin-bottom: -2vw;                     /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */ 
+                              margin-top: -6vw;                        /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */ 
+                              margin-right: 16vw;                      /* Spesifiserer tekst plassering */
+                              margin-left: 4vw;                        /* Spesifiserer tekst plassering */
+                              top: 5.5vw;                              /* Spesifiserer tekst plassering */
+                              position: relative;                      /* Posisjon */
+
+                            }
+
+
+                            .SO1SN {                                   /* SOMMERENS NYHET - PRODUKT STØTTEOVERSKRIFT 1 */ 
+
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.5vw;                        /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                              font-style: normal;                      /* Font tyngde/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              margin-right: 16vw;                      /* Spesifiserer tekst plassering */
+                              margin-left: 4vw;                        /* Spesifiserer tekst plassering */
+                              position: relative;                      /* Posisjon */
+                            
+                            }
+
+
+                            .SO2SN {                                   /* SOMMERENS NYHET - PRODUKT STØTTEOVERSKRIFT 2 */ 
+
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.5vw;                        /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                              font-style: normal;                      /* Font tyngde/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              margin-right: 16vw;                      /* Spesifiserer tekst plassering */
+                              margin-left: 4vw;                        /* Spesifiserer tekst plassering */
+                              top: 6.5vw;                              /* Spesifiserer tekst plassering */
+                              margin-bottom: 5vw;                      /* Tomrom mellom tekst og neste element */
+                              position: relative;                      /* Posisjon */
+
+                            }
+
+
+                            .buttonSN {                                /* SOMMERENS NYHET - PRODUKT - KNAPP */
+                        
+                              cursor: pointer;                         /* Endrer musepekeren */
+                              background-color: #B53721;             /* Bakgrunnsfarge */
+                              color: #FDECDF;                        /* Tekstfarge */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              font-size: 1vw;                          /* Skriftstørrelse */
+                              text-align: center;                      /* Plasserer teksten til venstre */
+                              border: none;                            /* Ingen ramme */
+                              border-radius: 1vw;                      /* Avrundede hjørner */
+                              width: 29vw;                             /* Bredden på knappen */
+                              height: 3vw;                             /* Høyden på knappen */
+                              margin-right: 16vw;                      /* Spesifiserer knappenes plassering */
+                              margin-left: 4.3vw;                      /* Spesifiserer knappenes plassering */
+                              margin-bottom: 1vw;                      /* Tomrom under knappene */
+                              box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                              margin-top: 0vw;                         /* Tomrom over knappene */
+                              z-index: 2;                              /* Plasserer knappen over bilde */
+                              position: relative;                      /* Posisjon */
+                              top: 10vw;                               /* Spesifiserer knappenes plassering */
+                          
+                            }
+
+
+                            .MengdetekstSN {                           /* SOMMERENS NYHET - MENGDETEKST */
+
+                              color: #000;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.5vw;                        /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 80%;                              /* Bredde på tekstboks */
+                              max-width: 30vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              padding-bottom: 0px;                     /* Padding under tekstboks */
+                              margin-right: 16vw;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekstens plassering */
+                              margin-top: -5vw;                        /* Spesifiserer tekst plassering */
+                              z-index: 2;                              /* Plasserer tekst oppå foto */
+                              position: relative;                      /* Posisjon */
+                              top: 9vw;                                /* Spesifiserer tekstens plassering */
+                            }
+
+
+              #jordbær {                                               /* SOMMERENS NYHET - YTLIGERE INFO / JORDBÆR FOTO */
+
+                height: 75vw;                                          /* Høyde på boks */
+                padding-bottom: 5vw;                                   /* Tomrom mellom boks og neste element */
+
+              }
+
+
+                            .jordbærFoto {                             /* SOMMERENS NYHET - JORDBÆR FOTO */
+
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av eller oppå bildet */
+                              height: 55.5vw;                          /* Foto høyde */ 
+                              width: 100%;                             /* Foto bredde */  
+                              position: relative;                      /* Posisjon */ 
+                              align-content: center;                   /* Midstilt foto */ 
+                              z-index: 1;                              /* Plasserer foto under alle andre elementer */ 
+                              object-fit:cover;                        /* Foto fyller hele definert område */
+                              padding-top: 9vw;                        /* Spesifiserer tekstens på bildets plassering */
+                              padding-bottom: 9vw;                     /* Spesifiserer tekstens på bildets plassering */
+
+                            }
+
+
+                            .jordbærTekst {                            /* SOMMERENS NYHET - JORDBÆR FOTO TEKST */
+
+                              color: #FFF;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 2vw;                          /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 100%;                             /* Bredde på tekstboks */
+                              max-width: 50vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              margin-right: auto;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekst plassering */
+                              margin-top: auto;                        /* Spesifiserer tekst plassering */
+                              margin-bottom: auto;                     /* Spesifiserer tekst plassering */
+                              z-index: 2;                              /* Plasserer tekst oppå foto */
+                              position: relative;                      /* Posisjon */
+                              top: -40vw;                              /* Spesifiserer tekst plassering */
+                            }
+
+
+              .OSNI {                                                  /* SOMMERENS NYHET - INGREDIENSER - UNDEROVERSKRIFT */ 
+
+                color: #B53721;                                      /* Tekstfarge */ 
+                text-align: center;                                    /* Midstilt tekst */ 
+                font-size: 5vw;                                        /* Skriftstørrelse */ 
+                font-family: "relation-two";                           /* Font*/ 
+                font-style: normal;                                    /* Font tyngde/stil */ 
+                z-index: 3;                                            /* Plasserer tekst over bilde */ 
+                margin-top: -1vw;                                      /* Plasserer støtteoverskrift over nærmere overskriften / mindre linjeavstand */ 
+                margin-bottom: -1.5vw;                                 /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */ 
+                position: relative;                                    /* Posisjon */ 
+                margin-left: auto;                                     /* Sentrerer teksten på siden */ 
+                margin-right: auto;                                    /* Sentrerer teksten på siden */ 
+
+              }
+
+
+              .containerSNI {                                          /* SOMMERENS NYHET - INGREDIENSER - CONTAINER */
+
+                margin-top: 5vw;
+                display: flex;                                         /* Lager et 3x2 rutenett basert på divene under */
+                flex-direction: column;                                /* Lager et 3x2 rutenett basert på divene under */
+                flex-direction: row;                                   /* Lager et 3x2 rutenett basert på divene under */
+                flex-wrap: wrap;                                       /* Plasserer automatisk siste element til venstre, under første på rutenettet */
+                width: 100%;                                           /* Bredde på container */
+                justify-content: space-between;                        /* Samme bredde mellom hvert element */
+                align-content: center;                                 /* Plasserer elementer med midtstilt utgangspunkt */
+                margin-bottom: 16vw;                                   /* Tomrom etter container */
+
+              }
+
+
+              .fløte {                                                 /* SOMMERENS NYHET - INGREDIENSER - FLØTE */
+
+                height: 32vw;                                          /* Boks høyde */
+                padding-bottom: 2vw;                                   /* Tomrom mellom foto og foto under */
+
+              }
+
+
+              .sukker {                                                /* SOMMERENS NYHET - INGREDIENSER - SUKKER */
+
+                height: 32vw;                                          /* Boks høyde */
+                padding-bottom: 2vw;                                   /* Tomrom mellom foto og foto under */
+
+              }
+
+
+              .egg {                                                   /* SOMMERENS NYHET - INGREDIENSER - EGG */
+
+                height: 32vw;                                          /* Boks høyde */
+                padding-bottom: 2vw;                                   /* Tomrom mellom foto og foto under */
+
+              }
+
+
+              .vanilje {                                               /* SOMMERENS NYHET - INGREDIENSER - VANILJE */
+
+                height: 32vw;                                          /* Boks høyde */
+
+              }
+
+
+              .sitrus {                                                /* SOMMERENS NYHET - INGREDIENSER - SITRUS */
+
+                height: 32vw;                                          /* Boks høyde */
+
+              }
+
+
+              .jordbær {                                               /* SOMMERENS NYHET - INGREDIENSER - JORDBÆR */
+
+                height: 32vw;                                          /* Boks høyde */
+
+              }
+
+
+                            .ingredienser {                            /* SOMMERENS NYHET - INGREDIENSER - FOTO */
+
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av eller oppå bildet */
+                              height: 32vw;                            /* Foto høyde */ 
+                              width: 100%;                             /* Foto bredde */  
+                              position: relative;                      /* Posisjon */ 
+                              align-content: center;                   /* Midstilt foto */ 
+                              z-index: 1;                              /* Plasserer foto under alle andre elementer */ 
+                              object-fit:cover;                        /* Foto fyller hele definert område */
+
+                            }
+
+
+                            .ingredienserTekst {                       /* SOMMERENS NYHET - INGREDIENSER - TEKST */
+
+                              color: #FFF;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 2.5vw;                        /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 100%;                             /* Bredde på tekstboks */
+                              max-width: 50vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              margin-right: auto;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekst plassering */
+                              margin-top: auto;                        /* Spesifiserer tekst plassering */
+                              margin-bottom: auto;                     /* Spesifiserer tekst plassering */
+                              z-index: 2;                              /* Plasserer tekst oppå foto */
+                              position: relative;                      /* Posisjon */
+                              top: -5vw;                               /* Spesifiserer tekst plassering */
+                            }
+              
+
+                .containerSNN {                                        /* SOMMERENS NYHET - NÆRINGSINNHOLD - CONTAINER */
+
+                  display: flex;                                       /* Splitter boksen i to deler */
+                  flex-direction: row;                                 /* Splitter boksen i to deler vannrett */
+                  height: 40vw;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+  
+                }
+
+
+                .TekstSNN {                                            /* SOMMERENS NYHET - NÆRINGSINNHOLD - TEKST */
+
+                  height: auto;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+
+                }
+
+
+                        .UnderoverskriftSNN {                          /* SOMMERENS NYHET - NÆRINGSINNHOLD - UNDEROVERSKRIFT */
+
+                          color: #B53721;                            /* Tekstfarge */
+                          text-align: left;                            /* Midstilt tekst */ 
+                          font-size: 4vw;                              /* Skriftstørrelse */ 
+                          font-family: "relation-two";                 /* Font */ 
+                          font-style: normal;                          /* Font stil */
+                          margin-left: 16vw;                           /* Spesifiserer tekst plassering */
+                          position: relative;                          /* Posisjon */
+                          margin-bottom: 0vw;                          /* Spesifiserer tekst plassering */
+                          margin-top: 0vw;                             /* Spesifiserer tekst plassering */
+
+                        }
+
+
+                        .MengdetekstSNN {                              /* SOMMERENS NYHET - NÆRINGSINNHOLD - MENGDETEKST */
+
+                          color: #B53721;                            /* Tekstfarge */
+                          text-align: left;                            /* Midstilt tekst */ 
+                          font-size: 1.5vw;                            /* Skriftstørrelse */ 
+                          font-family: "AvenirNextCondenced";          /* Font */ 
+                          font-style: normal;                          /* Font stil */
+                          margin-left: 16vw;                           /* Spesifiserer tekst plassering */
+                          position: relative;                          /* Posisjon */
+                          margin-top: 0vw;                             /* Spesifiserer tekst plassering */
+
+                        }
+
+
+                .TabellSNN {                                           /* SOMMERENS NYHET - TABELL */
+
+                  height: auto;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+                  
+                }
+
+
+                        .table {                                       /* SOMMERENS NYHET - TABELL - UTSEENDE */
+
+                          color: #B53721;                            /* Tekst farge */
+                          font-family: "AvenirNextCondenced";          /* Font */
+                          font-size: 1.5vw;                            /* Skriftstørrelse */
+                          border-collapse: collapse;                   /* Fjerner tomrom mellom kolonnene */
+                          border: none;                                /* Ingen ramme */
+
+                        }
+
+
+                        td {                                           /* SOMMERENS NYHET - TABELL - INNHOLD */
+
+                          padding-right: 10vw;                         /* Spesifiserer tekst plassering */
+                          padding-left: 1vw;                           /* Spesifiserer tekst plassering */
+                          padding-top: 0.5vw;                          /* Spesifiserer tekst plassering */
+                          padding-bottom: 0.5vw;                       /* Spesifiserer tekst plassering */
+                          text-align: left;                            /* Venstrestilt tekst */
+                          
+                        }
+
+
+                        td:last-child {                                /* SOMMERENS NYHET - TABELL - INNHOLD - NUMMER */
+
+                          text-align: right;                           /* Høyrestilt tekst */
+                          padding-left: 10vw;                          /* Spesifiserer tekst plassering */
+                          padding-right: 1vw;                          /* Spesifiserer tekst plassering */
+                      }
+
+
+                      tr:nth-child(odd) {                              /* SOMMERENS NYHET - TABELL - ANNENHVER LINJE */
+
+                        background-color: #fff;                      /* Bakgrunnsfarge på annenhver linje i tabellen */
+                      
+                      }
+
+
+          #buttonSingelSN {                                            /* SOMMERENS NYHET - SINGEL KNAPP NEDERST PÅ SIDEN */
+
+            height: 10vw;                                              /* Høyde på boks */
+            padding-bottom: 5vw;                                       /* Tomrom mellom boks og footer */
+            display: block;                                            /* Boks/ramme/gruppe for knappen */
+
+          }
+
+                      .buttonSingelSN {                                /* SOMMERENS NYHET - SINGEL KNAPP NEDERST PÅ SIDEN - SPESIFIKASJONER */
+
+
+                        cursor: pointer;                               /* Endrer musepekeren */
+                        background-color: #B53721;                   /* Bakgrunnsfarge */
+                        color: #FDECDF;                              /* Tekstfarge */
+                        font-family: "AvenirNextCondenced";            /* Font */
+                        font-size: 1.5vw;                              /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                        border-radius: 1vw;                            /* Avrundede hjørner */
+                        border: none;                                  /* Ingen ramme */
+                        width: 40vw;                                   /* Bredden på knappen */
+                        height: 4vw;                                   /* Høyden på knappen */
+                        position: relative;                            /* Posisjon */
+                        display: block;                                /* Hindrer andre elementer i å forstyrre knappens plassering */
+                        margin-right: auto;                            /* Midstiller knappen på siden */
+                        margin-left: auto;                             /* Midstiller knappen på siden */
+                        box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                      
+                      }      
 } 
   
   
@@ -2318,7 +3124,7 @@ body {                                                                 /* BODY *
                       margin-right: auto;                              /* Tomrom til høyre */
                       display:grid;                                    /* For midtstilling av knapper */
                       align-content: space-evenly;                     /* For spesifisering av midstilling av tekst i knapp */
-                      box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                      box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
 
                    }
 
@@ -2339,7 +3145,7 @@ body {                                                                 /* BODY *
                       margin-right: auto;                              /* Tomrom til høyre */
                       display:grid;                                    /* For midtstilling av knapper */
                       align-content: space-evenly;                     /* For spesifisering av midstilling av tekst i knapp */
-                      box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                      box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
 
                    }
 
@@ -2416,7 +3222,7 @@ body {                                                                 /* BODY *
                           z-index: 4;                                  /* Plasserer knapper over bilde */
                           border-radius: 100%;                         /* Gjør knappen rund */
                           left: 10px;                                  /* Plasserer knappen til venstre men med noe tomrom */
-                          box-shadow: 0 4px 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                          box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
 
                         }
                   
@@ -2435,7 +3241,7 @@ body {                                                                 /* BODY *
                           z-index: 4;                                  /* Plasserer knapper over bilde */
                           border-radius: 100%;                         /* Gjør knappen rund */
                           right: 10px;                                 /* Plasserer knappen til høyre men med noe tomrom */
-                          box-shadow: 0 4px 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                          box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
 
                         }
 
@@ -2844,7 +3650,7 @@ body {                                                                 /* BODY *
                       margin-right: auto;                              /* Tomrom til høyre */
                       display:grid;                                    /* For midtstilling av knapper */
                       align-content: space-evenly;                     /* For spesifisering av midstilling av tekst i knapp */
-                      box-shadow: 0 7px 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                      box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
 
                     }
 
@@ -2860,7 +3666,413 @@ body {                                                                 /* BODY *
 
                     }
 
-                    
+
+              #SommerensNyhet {                                        /* SOMMERENS NYHET - SPLASH */
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                height: 20vw;                                          /* Høyde på boks */
+                padding-bottom: 8vw;                                   /* Tomrom mellom boks og neste element */
+                
+
+              }
+
+
+              .containerSN {                                           /* SOMMERENS NYHET - CONTAINER */
+
+                display: block;                                         /* Splitter boksen i to deler */
+                height: auto;                                          /* Høyde på boks */
+                width: 100%;                                           /* Bredde på boks */
+
+              }
+
+
+              #PannaCottaFoto{                                         /* SOMMERENS NYHET - FOTO AV PRODUKT */
+
+                display: block;                                        /* For å unngå at andre elementer legger seg ved siden av eller oppå bildet */
+                width: 100%;                                           /* Foto bredde */
+                object-fit: fill;                                      /* Foto fyller definerte bredde og høyde */
+                align-content: center;                                 /* Midtstilt foto */
+                height: auto;                                          /* Foto høyde */
+                padding-bottom: 25px;                                  /* Padding under foto */
+                
+              }
+
+
+              #PannaCottaInfo{                                         /* SOMMERENS NYHET - PRODUKT */
+
+                display: block;                                        /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                height: auto;                                          /* Høyde på boks */
+                width: 100%;                                           /* Bredde på boks */
+                padding-bottom: 20vw;                                   /* Tomrom mellom boks og neste element */
+
+              }
+
+
+                            .OSN {                                     /* SOMMERENS NYHET - PRODUKT OVERSKRIFT */ 
+                        
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 13vw;                         /* Skriftstørrelse 13vw = ca 52px (i 390px format) */ 
+                              font-family: "relation-two";                     /* Font */ 
+                              font-style: normal;                              /* Font tyngde/stil */
+                              margin-top: -4vw;                                /* Plasserer støtteoverskrift over nærmere overskriften / mindre linjeavstand  */
+                              margin-bottom: -12vw;                            /* Plasserer støtteoverskrift under nærmere overskriften / mindre linjeavstand */
+                              width: 80%;                                      /* Bredde på tekstboks */
+                              max-width: 388px;                                /* Maks høyde på tekstboks */
+                              height: auto;                                    /* Høyde på tekstboks */
+                              padding-bottom: 8vw;                             /* Padding under teksten */
+                              margin-left: auto;                               /* For midtstilling av tekst */
+                              margin-right: auto;                              /* For midtstilling av tekst */
+
+
+                            }
+
+
+                            .SO1SN {                                   /* SOMMERENS NYHET - PRODUKT STØTTEOVERSKRIFT 1 */ 
+
+                              color: #B53721;                                /* Tekstfarge */
+                              text-align: center;                              /* Midstilt tekst */ 
+                              font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */  
+                              font-style: normal;                              /* Font tyngde/stil */
+                              font-family: "AvenirNextCondenced";              /* Font */
+                              display: block;                                  /* For å unngå at andre elementer legger seg ved siden av teksten */
+                              width: 80%;                                      /* Bredde på tekstboks */
+                              max-width: 388px;                                /* Maks bredde på tekstboks */
+                              height: auto;                                    /* Høyde på tekstboks */
+                              margin-left: auto;                               /* For midtstilling av tekst */
+                              margin-right: auto;                              /* For midtstilling av tekst */
+                            
+                            }
+
+
+                            .SO2SN {                                   /* SOMMERENS NYHET - PRODUKT STØTTEOVERSKRIFT 2 */ 
+
+                              color: #B53721;                                /* Tekstfarge */
+                              text-align: center;                              /* Midstilt tekst */ 
+                              font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                              font-style: normal;                              /* Font tyngde/stil */
+                              font-family: "AvenirNextCondenced";              /* Font */
+                              display: block;                                  /* For å unngå at andre elementer legger seg ved siden av teksten */
+                              width: 80%;                                      /* Bredde på tekstboks */
+                              max-width: 388px;                                /* Maks bredde på tekstboks */
+                              height: auto;                                    /* Høyde på tekstboks */
+                              padding-bottom: 8vw;                             /* Padding under tekstboks */
+                              margin-left: auto;                               /* For midtstilling av tekst */
+                              margin-right: auto;                              /* For midtstilling av tekst */
+
+                            }
+
+
+                            .buttonSN {                                /* SOMMERENS NYHET - PRODUKT - KNAPP */
+                        
+                              cursor: pointer;                                 /* Endrer musepekeren */
+                              background-color: #B53721;                     /* Bakgrunnsfarge */
+                              color: #FDECDF;                                /* Tekstfarge */
+                              font-family: "AvenirNextCondenced";              /* Font */
+                              font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                              border-radius: 5vw;                              /* Avrundede hjørner */
+                              border: none;                                    /* Ingen ramme */
+                              width: 79vw;                                     /* Bredden på knappen */
+                              height: 16vw;                                    /* Høyden på knappen */
+                              max-width: 388px;                                /* Maks bredde på knappen */
+                              margin-bottom: 20px;                             /* Tomrom mellom knappene */
+                              margin-left: auto;                               /* Tomrom til venstre */
+                              margin-right: auto;                              /* Tomrom til høyre */
+                              display:grid;                                    /* For midtstilling av knapper */
+                              align-content: space-evenly;                     /* For spesifisering av midstilling av tekst i knapp */
+                              box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                          
+                            }
+
+
+                            .MengdetekstSN {                           /* SOMMERENS NYHET - MENGDETEKST */
+
+                              color: #000;                                   /* Tekstfarge */
+                              text-align: center;                              /* Midstilt tekst */ 
+                              font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */ 
+                              font-style: normal;                              /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";              /* Font */
+                              width: 80%;                                      /* Bredde på tekstboks */
+                              max-width: 388px;                                /* Maks bredde på tekstboks */
+                              height: auto;                                    /* Høyde på tekstboks */
+                              padding-bottom: 50px;                            /* Padding under tekstboks */
+                              margin-left: auto;                               /* For midtstilling av tekst */
+                              margin-right: auto;                              /* For midtstilling av tekst */
+      
+                            }
+
+
+              #jordbær {                                               /* SOMMERENS NYHET - YTLIGERE INFO / JORDBÆR FOTO */
+
+                height: 150vw;                                         /* Høyde på boks */
+                padding-bottom: 10vw;                                  /* Tomrom mellom boks og neste element */
+
+              }
+
+
+                            .jordbærFoto {                             /* SOMMERENS NYHET - JORDBÆR FOTO */
+
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av eller oppå bildet */
+                              height: 100%;                            /* Foto høyde */ 
+                              width: 100%;                             /* Foto bredde */  
+                              position: relative;                      /* Posisjon */ 
+                              align-content: center;                   /* Midstilt foto */ 
+                              z-index: 1;                              /* Plasserer foto under alle andre elementer */ 
+                              object-fit:cover;                        /* Foto fyller hele definert område */
+
+                            }
+
+
+                            .jordbærTekst {                            /* SOMMERENS NYHET - JORDBÆR FOTO TEKST */
+
+                              color: #FFF;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 5vw;                          /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 70%;                              /* Bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              margin-right: auto;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekst plassering */
+                              margin-top: auto;                        /* Spesifiserer tekst plassering */
+                              margin-bottom: auto;                     /* Spesifiserer tekst plassering */
+                              z-index: 2;                              /* Plasserer tekst oppå foto */
+                              position: relative;                      /* Posisjon */
+                              top: -100vw;                             /* Spesifiserer tekst plassering */
+                            }
+
+              .OSNI {                                                  /* SOMMERENS NYHET - INGREDIENSER - UNDEROVERSKRIFT */ 
+
+                color: #B53721;                                      /* Tekstfarge */ 
+                text-align: center;                                    /* Midstilt tekst */ 
+                font-size: 10vw;                                       /* Skriftstørrelse 15vw = ca 58px (i 390px format) */ 
+                font-family: "relation-two";                           /* Font*/ 
+                font-style: normal;                                    /* Font tyngde/stil */ 
+                position: relative;                                    /* Posisjon */ 
+                margin-bottom: 2vw;                                  /* Spesifiserer tekst plassering */
+
+              }
+
+
+              .containerSNI {                                          /* SOMMERENS NYHET - INGREDIENSER - CONTAINER */
+
+                display: flex;                                         /* Lager et 2x3 rutenett basert på divene under */
+                flex-direction: column;                                /* Lager et 2x3 rutenett basert på divene under */
+                flex-direction: row;                                   /* Lager et 2x3 rutenett basert på divene under */
+                flex-wrap: wrap;                                       /* Plasserer automatisk siste element til venstre, under første på rutenettet */
+                width: 100%;                                           /* Bredde på container */
+                justify-content: space-between;                        /* Samme bredde mellom hvert element */
+                align-content: center;                                 /* Plasserer elementer med midtstilt utgangspunkt */
+                margin-bottom: 16vw;                                   /* Tomrom etter container */
+
+              }
+
+
+              .fløte {                                                 /* SOMMERENS NYHET - INGREDIENSER - FLØTE */
+
+                height: 51vw;                                          /* Boks høyde */
+                
+
+              }
+
+
+              .sukker {                                                /* SOMMERENS NYHET - INGREDIENSER - SUKKER */
+
+                height: 51vw;                                          /* Boks høyde */
+                
+
+              }
+
+
+              .egg {                                                   /* SOMMERENS NYHET - INGREDIENSER - EGG */
+
+                height: 51vw;                                          /* Boks høyde */
+
+              }
+
+
+              .vanilje {                                               /* SOMMERENS NYHET - INGREDIENSER - VANILJE */
+
+                height: 51vw;                                          /* Boks høyde */
+
+              }
+
+
+              .sitrus {                                                /* SOMMERENS NYHET - INGREDIENSER - SITRUS */
+
+                height: 51vw;                                          /* Boks høyde */
+
+              }
+
+
+              .jordbær {                                               /* SOMMERENS NYHET - INGREDIENSER - JORDBÆR */
+
+                height: 51vw;                                          /* Boks høyde */
+
+              }
+
+
+                            .ingredienser {                            /* SOMMERENS NYHET - INGREDIENSER - FOTO */
+
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av eller oppå bildet */
+                              height: 49vw;                            /* Foto høyde */ 
+                              width: 100%;                             /* Foto bredde */  
+                              position: relative;                      /* Posisjon */ 
+                              align-content: center;                   /* Midstilt foto */ 
+                              z-index: 1;                              /* Plasserer foto under alle andre elementer */ 
+                              object-fit:cover;                        /* Foto fyller hele definert område */
+
+                            }
+
+
+                            .ingredienserTekst {                       /* SOMMERENS NYHET - INGREDIENSER - TEKST */
+
+                              color: #FFF;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 4vw;                          /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 100%;                             /* Bredde på tekstboks */
+                              max-width: 50vw;                         /* Maks bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              margin-right: auto;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekst plassering */
+                              margin-top: auto;                        /* Spesifiserer tekst plassering */
+                              margin-bottom: auto;                     /* Spesifiserer tekst plassering */
+                              z-index: 2;                              /* Plasserer tekst oppå foto */
+                              position: relative;                      /* Posisjon */
+                              top: -7vw;                               /* Spesifiserer tekst plassering */
+                            }
+              
+
+                .containerSNN {                                        /* SOMMERENS NYHET - NÆRINGSINNHOLD - CONTAINER */
+
+                  display: block;                                      /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                  height: auto;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+                  margin-top: 0vw;
+                  margin-bottom: 20vw; 
+  
+                }
+
+
+                .TekstSNN {                                            /* SOMMERENS NYHET - NÆRINGSINNHOLD - TEKST */
+
+                  height: auto;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+
+                }
+
+
+                        .UnderoverskriftSNN {                          /* SOMMERENS NYHET - NÆRINGSINNHOLD - UNDEROVERSKRIFT */
+
+                          color: #B53721;                            /* Tekstfarge */
+                          text-align: center;                          /* Midstilt tekst */ 
+                          font-size: 10vw;                             /* Skriftstørrelse */ 
+                          font-family: "relation-two";                 /* Font */ 
+                          font-style: normal;                          /* Font stil */
+                          margin-left: 16vw;                           /* Spesifiserer tekst plassering */
+                          position: relative;                          /* Posisjon */
+                          margin-left: auto;                           /* Midstiller teksten på siden */
+                          margin-right: auto;                          /* Midstiller teksten på siden */
+                          margin-bottom: 0vw;                          /* Spesifiserer tekst plassering */
+                          margin-top: 0vw;                             /* Spesifiserer tekst plassering */
+
+                        }
+
+
+                        .MengdetekstSNN {                              /* SOMMERENS NYHET - NÆRINGSINNHOLD - MENGDETEKST */
+
+                          color: #B53721;                            /* Tekstfarge */
+                          text-align: right;                           /* Midstilt tekst */ 
+                          font-size: 4vw;                              /* Skriftstørrelse */ 
+                          font-family: "AvenirNextCondenced";          /* Font */ 
+                          font-style: normal;                          /* Font stil */
+                          margin-right: 13vw;                          /* Spesifiserer tekst plassering */
+                          position: relative;                          /* Posisjon */
+                          margin-top: 2vw;                             /* Spesifiserer tekst plassering */
+                          margin-bottom: 1vw;                          /* Spesifiserer tekst plassering */
+
+                        }
+
+
+                .TabellSNN {                                           /* SOMMERENS NYHET - TABELL */
+
+                  height: auto;                                        /* Boks høyde */
+                  width: 100%;                                         /* Boks bredde */
+                  margin-bottom: 20vw;
+                  
+                }
+
+
+                        .table {                                       /* SOMMERENS NYHET - TABELL - UTSEENDE */
+
+                          color: #B53721;                            /* Tekst farge */
+                          font-family: "AvenirNextCondenced";          /* Font */
+                          font-size: 4vw;                              /* Skriftstørrelse */
+                          border-collapse: collapse;                   /* Fjerner tomrom mellom kolonnene */
+                          border: none;                                /* Ingen ramme */
+                          margin-left: auto;                           /* Midtstiller tabellen på siden */
+                          margin-right: auto;                          /* Midtstiller tabellen på siden */
+
+                        }
+
+
+                        td {                                           /* SOMMERENS NYHET - TABELL - INNHOLD */
+
+                          padding-right: 20vw;                         /* Spesifiserer tekst plassering og bredden på kolonne */
+                          padding-left: 1vw;                           /* Spesifiserer tekst plassering */
+                          padding-top: 0.5vw;                          /* Spesifiserer tekst plassering */
+                          padding-bottom: 0.5vw;                       /* Spesifiserer tekst plassering */
+                          text-align: left;                            /* Venstrestilt tekst */
+                          
+                        }
+
+
+                        td:last-child {                                /* SOMMERENS NYHET - TABELL - INNHOLD - NUMMER */
+
+                          text-align: right;                           /* Høyrestilt tekst */
+                          padding-left: 20vw;                          /* Spesifiserer tekst plassering og bredden på kolonne */
+                          padding-right: 1vw;                          /* Spesifiserer tekst plassering */
+                      }
+
+
+                      tr:nth-child(odd) {                              /* SOMMERENS NYHET - TABELL - ANNENHVER LINJE */
+
+                        background-color: #fff;                      /* Bakgrunnsfarge på annenhver linje i tabellen */
+                      
+                      }
+
+
+          #buttonSingelSN {                                            /* SOMMERENS NYHET - SINGEL KNAPP NEDERST PÅ SIDEN */
+
+            height: 15vw;                                              /* Høyde på boks */
+            padding-bottom: 50vw;                                      /* Tomrom mellom boks og footer */
+            display: block;                                            /* Boks/ramme/gruppe for knappen */
+
+          }
+
+                      .buttonSingelSN {                                /* SOMMERENS NYHET - SINGEL KNAPP NEDERST PÅ SIDEN - SPESIFIKASJONER */
+
+
+                        cursor: pointer;                               /* Endrer musepekeren */
+                        background-color: #B53721;                   /* Bakgrunnsfarge */
+                        color: #FDECDF;                              /* Tekstfarge */
+                        font-family: "AvenirNextCondenced";            /* Font */
+                        font-size: 4vw;                                /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                        border-radius: 5vw;                            /* Avrundede hjørner */
+                        border: none;                                  /* Ingen ramme */
+                        width: 79vw;                                   /* Bredden på knappen */
+                        height: 16vw;                                  /* Høyden på knappen */
+                        max-width: 388px;                              /* Maks bredde på knappen */
+                        margin-bottom: 20px;                           /* Tomrom mellom knappene */
+                        margin-left: auto;                             /* Tomrom til venstre */
+                        margin-right: auto;                            /* Tomrom til høyre */
+                        display:grid;                                  /* For midtstilling av knapper */
+                        align-content: space-evenly;                   /* For spesifisering av midstilling av tekst i knapp */
+                        box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
+                      
+                      }      
 
   }
 
