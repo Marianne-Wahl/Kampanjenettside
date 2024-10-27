@@ -42,7 +42,7 @@ body {                                                                 /* BODY *
                   width: 8vw;                                          /* Logos bredde */
                   position: absolute;                                  /* Posisjon */
 
-                }
+              }
 
 
               .Navigasjonsbar {                                        /* HEADER - NAVIGASJONSBAR */
@@ -939,7 +939,6 @@ body {                                                                 /* BODY *
                             font-size: 1.7vw;                          /* Skriftstørrelse */ 
                             font-style: normal;                        /* Font tynge/stil */
                             font-family: "AvenirNextCondenced";        /* Font */
-                            line-height: 3vw;                          /* Linjeavstand */
                             width: 80%;                                /* Bredde på tekstboks */
                             max-width: 30vw;                           /* Maks bredde på tekstboks */
                             height: auto;                              /* Høyde på tekstboks */
@@ -1387,9 +1386,156 @@ body {                                                                 /* BODY *
                         box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                       
                       }
-                      
 
-              }
+
+                    #Fotokonkurranse {                                 /* FOTOKONKURRANSE - SPLASH */ 
+
+                      display: block;                                  /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                      height: auto;                                    /* Høyde på boks */
+                      overflow: hidden;                                /* Gjemmer elementer som overstiger definert område*/
+
+                    }
+
+                    #FKMengdetekst {                                   /* FOTOKONKURRANSE - MENGDETEKST RAMME */ 
+
+                      display: block;                                  /* For å unngå at andre elementer legger seg ved siden av teksten */
+                      height: auto;                                    /* Høyde på boks */
+                      width: auto;                                     /* Bredde på boks */
+                      align-content: center;                           /* Midtstiller tekst*/
+                      z-index: 4;                                      /* Plasserer tekst over illustrasjoner */
+                      position: relative;                              /* Posisjon */
+
+                    }
+              
+                            .FKMengdetekst {                           /* FOTOKONKURRANSE - MENGDETEKST */ 
+
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av teksten */
+                              color: #000;                           /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 1.7vw;                        /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 40%;                              /* Bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              margin-right: auto;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekst plassering */
+                              margin-top: -6vw;                        /* Spesifiserer tekst plassering */
+                              margin-bottom: 0vw;                      /* Tomrom under mengdetekst */
+
+                            }
+
+
+                      #FKKarusell {                                    /* FOTOKONKURRANSE - KARUSELL */ 
+
+                        display: block;                                /* Boks/ramme/gruppe for alle elementene relatert til fotokonkurransen */
+                        height: 46vw;                                  /* Høyde på boks */ 
+                        width: 100%;                                   /* Bredde på boks */
+                        margin-top: 6vw;                               /* Tomrom over karusellen */
+                        overflow: hidden;                              /* Gjemmer elementer som overstiger definert område*/
+                        align-content: center;                         /* Midstiller karusellen */
+                        margin-left: auto;                             /* Midstiller karusellen */
+                        margin-right: auto;                            /* Midstiller karusellen */
+                        margin-bottom: 6vw;                            /* Tomrom under karusellen */
+                
+                      }
+    
+    
+                                .FKCarousel-container {                /* FOTOKONKURRANSE - KARUSELL */
+    
+                                  position: relative;                  /* Posisjon */
+                                  width: 50%;                          /* Bredde mellom bildene i karusellen */
+                                  margin-left: auto;                   /* Midstiller karusellen */
+                                  margin-right: auto;                  /* Midstiller karusellen */
+                                  align-content: center;               /* Midstiller karusellen */
+    
+                              }
+                              
+                              
+                                    .FKCarousel {
+    
+                                      display: flex;                   /* Plasserer elementer ved siden av hverandre */
+                                      scroll-behavior: smooth;         /* Animasjon effekt */
+                                      transition: transform 0.5s ease; /* Animasjon ved klikk på knapp */
+    
+                                    }
+                              
+    
+                                    .FKCarousel-item {
+    
+                                      min-width: 100%;                 /* Minimum bredde - får karusellen til å skalere */
+                                      max-width: 100%;                 /* Maks bredde - får karusellen til å skalere */
+                                      text-align: center;              /* Midtstilt tekst */
+    
+                                    }
+                              
+    
+                                    .FKCarousel-item img {             /* FOTOKONKURRANSE - KARUSELL - FOTO */
+    
+                                      max-width: 40vw;                 /* Maks bredde - får karusellen til å skalere */
+                                      min-width: 40vw;                 /* Minimum bredde - får karusellen til å skalere */
+                                      border: 11px solid;              /* Ramme */
+                                      border-color: #fff;            /* Farge på ramme*/
+    
+                                    }
+    
+                              
+                                    .FKCarousel-item p {               /* FOTOKONKURRANSE - KARUSELL - TEKST */
+    
+                                      margin-top: 10px;                /* Tomrom mellom tekst og fotokarusell */
+                                      font-size: 1vw;                  /* Skriftstørrelse 3vw = ca 12px (i 390px format) */
+                                      color: #555;                   /* Tekstfarge */
+                                      font-family: "AvenirNextCondenced";  /* Font */
+                                        
+                                    }
+                      
+                                    
+
+                      #FKInstrukser {                                  /* FOTOKONKURRANSE - INSTRUKSER */ 
+
+                        display: block;                                /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+                        height: auto;                                  /* Høyde på boks */
+                        width: auto;                                   /* Bredde på boks */
+                        padding-bottom: 10vw;                          /* Tomrom under boks */
+                        padding-top: 1vw;                              /* Tomrom over boks */
+  
+                      }
+                
+
+                            .FKInstrukserO {                           /* FOTOKONKURRANSE - INSTRUKSER - OVERSKIFT */ 
+        
+                              display: block;                          /* For å unngå at andre elementer legger seg ved siden av teksten */
+                              color: #B53721;                        /* Tekstfarge */
+                              text-align: center;                      /* Midstilt tekst */ 
+                              font-size: 2.5vw;                        /* Skriftstørrelse */ 
+                              font-style: normal;                      /* Font tynge/stil */
+                              font-family: "AvenirNextCondenced";      /* Font */
+                              width: 40%;                              /* Bredde på tekstboks */
+                              height: auto;                            /* Høyde på tekstboks */
+                              margin-right: auto;                      /* Spesifiserer tekst plassering */
+                              margin-left: auto;                       /* Spesifiserer tekst plassering */
+                             
+                              }
+
+
+                              .FKInstrukser {                          /* FOTOKONKURRANSE - INSTRUKSER - MENGDETEKST */ 
+  
+                                display: block;                        /* For å unngå at andre elementer legger seg ved siden av teksten */
+                                color: #B53721;                      /* Tekstfarge */
+                                text-align: center;                    /* Midstilt tekst */ 
+                                font-size: 1.7vw;                      /* Skriftstørrelse */ 
+                                font-style: normal;                    /* Font tynge/stil */
+                                font-family: "AvenirNextCondenced";    /* Font */
+                                line-height: 3vw;                      /* Linjeavstand */ 
+                                width: 40%;                            /* Bredde på tekstboks */
+                                height: auto;                          /* Høyde på tekstboks */
+                                margin-right: auto;                    /* Spesifiserer tekst plassering */
+                                margin-left: auto;                     /* Spesifiserer tekst plassering */
+  
+  
+                              }
+                              
+
+   }
 
 
 
@@ -2746,7 +2892,156 @@ body {                                                                 /* BODY *
                         margin-left: auto;                             /* Midstiller knappen på siden */
                         box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                       
-                      }      
+                      }  
+                      
+                      
+
+        #Fotokonkurranse {                                             /* FOTOKONKURRANSE - SPLASH */ 
+
+          display: block;                                              /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+          height: auto;                                                /* Høyde på boks */
+          overflow: hidden;                                            /* Gjemmer elementer som overstiger definert område*/
+
+        }
+
+        #FKMengdetekst {                                               /* FOTOKONKURRANSE - MENGDETEKST RAMME */ 
+
+          display: block;                                              /* For å unngå at andre elementer legger seg ved siden av teksten */
+          height: auto;                                                /* Høyde på boks */
+          width: auto;                                                 /* Bredde på boks */
+          align-content: center;                                       /* Midtstiller tekst*/
+          z-index: 4;                                                  /* Plasserer tekst over illustrasjoner */
+          position: relative;                                          /* Posisjon */
+
+        }
+  
+                .FKMengdetekst {                                       /* FOTOKONKURRANSE - MENGDETEKST */ 
+
+                  display: block;                                      /* For å unngå at andre elementer legger seg ved siden av teksten */
+                  color: #000;                                       /* Tekstfarge */
+                  text-align: center;                                  /* Midstilt tekst */ 
+                  font-size: 1.7vw;                                    /* Skriftstørrelse */ 
+                  font-style: normal;                                  /* Font tynge/stil */
+                  font-family: "AvenirNextCondenced";                  /* Font */
+                  width: 40%;                                          /* Bredde på tekstboks */
+                  height: auto;                                        /* Høyde på tekstboks */
+                  margin-right: auto;                                  /* Spesifiserer tekst plassering */
+                  margin-left: auto;                                   /* Spesifiserer tekst plassering */
+                  margin-top: -6vw;                                    /* Spesifiserer tekst plassering */
+                  margin-bottom: 0vw;                                  /* Tomrom under mengdetekst */
+
+                }
+
+
+          #FKKarusell {                                                /* FOTOKONKURRANSE - KARUSELL */ 
+
+            display: block;                                            /* Boks/ramme/gruppe for alle elementene relatert til fotokonkurransen */
+            height: 46vw;                                              /* Høyde på boks */ 
+            width: 100%;                                               /* Bredde på boks */
+            margin-top: 6vw;                                           /* Tomrom over karusellen */
+            overflow: hidden;                                          /* Gjemmer elementer som overstiger definert område*/
+            align-content: center;                                     /* Midstiller karusellen */
+            margin-left: auto;                                         /* Midstiller karusellen */
+            margin-right: auto;                                        /* Midstiller karusellen */
+            margin-bottom: 6vw;                                        /* Tomrom under karusellen */
+    
+          }
+
+
+                    .FKCarousel-container {                            /* FOTOKONKURRANSE - KARUSELL */
+
+                      position: relative;                              /* Posisjon */
+                      width: 50%;                                      /* Bredde mellom bildene i karusellen */
+                      margin-left: auto;                               /* Midstiller karusellen */
+                      margin-right: auto;                              /* Midstiller karusellen */
+                      align-content: center;                           /* Midstiller karusellen */
+
+                  }
+                  
+                  
+                        .FKCarousel {
+
+                          display: flex;                               /* Plasserer elementer ved siden av hverandre */
+                          scroll-behavior: smooth;                     /* Animasjon effekt */
+                          transition: transform 0.5s ease;             /* Animasjon ved klikk på knapp */
+
+                        }
+                  
+
+                        .FKCarousel-item {
+
+                          min-width: 100%;                             /* Minimum bredde - får karusellen til å skalere */
+                          max-width: 100%;                             /* Maks bredde - får karusellen til å skalere */
+                          text-align: center;                          /* Midtstilt tekst */
+
+                        }
+                  
+
+                        .FKCarousel-item img {                         /* FOTOKONKURRANSE - KARUSELL - FOTO */
+
+                          max-width: 40vw;                             /* Maks bredde - får karusellen til å skalere */
+                          min-width: 40vw;                             /* Minimum bredde - får karusellen til å skalere */
+                          border: 11px solid;                          /* Ramme */
+                          border-color: #fff;                        /* Farge på ramme*/
+
+                        }
+
+                  
+                        .FKCarousel-item p {                           /* FOTOKONKURRANSE - KARUSELL - TEKST */
+
+                          margin-top: 10px;                            /* Tomrom mellom tekst og fotokarusell */
+                          font-size: 1vw;                              /* Skriftstørrelse 3vw = ca 12px (i 390px format) */
+                          color: #555;                               /* Tekstfarge */
+                          font-family: "AvenirNextCondenced";          /* Font */
+                            
+                        }
+          
+                        
+
+          #FKInstrukser {                                              /* FOTOKONKURRANSE - INSTRUKSER */ 
+
+            display: block;                                            /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+            height: auto;                                              /* Høyde på boks */
+            width: auto;                                               /* Bredde på boks */
+            padding-bottom: 10vw;                                      /* Tomrom under boks */
+            padding-top: 1vw;                                          /* Tomrom over boks */
+
+          }
+    
+
+                .FKInstrukserO {                                       /* FOTOKONKURRANSE - INSTRUKSER - OVERSKIFT */ 
+
+                  display: block;                                      /* For å unngå at andre elementer legger seg ved siden av teksten */
+                  color: #B53721;                                    /* Tekstfarge */
+                  text-align: center;                                  /* Midstilt tekst */ 
+                  font-size: 2.5vw;                                    /* Skriftstørrelse */ 
+                  font-style: normal;                                  /* Font tynge/stil */
+                  font-family: "AvenirNextCondenced";                  /* Font */
+                  width: 40%;                                          /* Bredde på tekstboks */
+                  height: auto;                                        /* Høyde på tekstboks */
+                  margin-right: auto;                                  /* Spesifiserer tekst plassering */
+                  margin-left: auto;                                   /* Spesifiserer tekst plassering */
+                  
+                  }
+
+
+                  .FKInstrukser {                                      /* FOTOKONKURRANSE - INSTRUKSER - MENGDETEKST */ 
+
+                    display: block;                                    /* For å unngå at andre elementer legger seg ved siden av teksten */
+                    color: #B53721;                                  /* Tekstfarge */
+                    text-align: center;                                /* Midstilt tekst */ 
+                    font-size: 1.7vw;                                  /* Skriftstørrelse */ 
+                    font-style: normal;                                /* Font tynge/stil */
+                    font-family: "AvenirNextCondenced";                /* Font */
+                    line-height: 3vw;                                  /* Linjeavstand */ 
+                    width: 40%;                                        /* Bredde på tekstboks */
+                    height: auto;                                      /* Høyde på tekstboks */
+                    margin-right: auto;                                /* Spesifiserer tekst plassering */
+                    margin-left: auto;                                 /* Spesifiserer tekst plassering */
+
+                  }
+
+
 } 
   
   
@@ -4073,6 +4368,154 @@ body {                                                                 /* BODY *
                         box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);  /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */
                       
                       }      
+
+                                 
+
+        #Fotokonkurranse {                                             /* FOTOKONKURRANSE - SPLASH */ 
+
+          display: block;                                              /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+          height: auto;                                                /* Høyde på boks */
+          overflow: hidden;                                            /* Gjemmer elementer som overstiger definert område*/
+
+        }
+
+        #FKMengdetekst {                                               /* FOTOKONKURRANSE - MENGDETEKST RAMME */ 
+
+          display: block;                                              /* For å unngå at andre elementer legger seg ved siden av teksten */
+          height: auto;                                                /* Høyde på boks */
+          width: auto;                                                 /* Bredde på boks */
+          align-content: center;                                       /* Midtstiller tekst*/
+          z-index: 4;                                                  /* Plasserer tekst over illustrasjoner */
+          position: relative;                                          /* Posisjon */
+
+        }
+  
+                .FKMengdetekst {                                       /* FOTOKONKURRANSE - MENGDETEKST */ 
+
+                  display: block;                                      /* For å unngå at andre elementer legger seg ved siden av teksten */
+                  color: #000;                                       /* Tekstfarge */
+                  text-align: center;                                  /* Midstilt tekst */ 
+                  font-size: 4vw;                                    /* Skriftstørrelse */ 
+                  font-style: normal;                                  /* Font tynge/stil */
+                  font-family: "AvenirNextCondenced";                  /* Font */
+                  width: 80%;                                          /* Bredde på tekstboks */
+                  height: auto;                                        /* Høyde på tekstboks */
+                  margin-right: auto;                                  /* Spesifiserer tekst plassering */
+                  margin-left: auto;                                   /* Spesifiserer tekst plassering */
+                  margin-top: 10vw;                                    /* Spesifiserer tekst plassering */
+                  margin-bottom: 0vw;                                  /* Tomrom under mengdetekst */
+
+                }
+
+
+          #FKKarusell {                                                /* FOTOKONKURRANSE - KARUSELL */ 
+
+            display: block;                                            /* Boks/ramme/gruppe for alle elementene relatert til fotokonkurransen */
+            height: auto;                                              /* Høyde på boks */ 
+            width: 100%;                                               /* Bredde på boks */
+            margin-top: 20vw;                                          /* Tomrom over karusellen */
+            overflow: hidden;                                          /* Gjemmer elementer som overstiger definert område*/
+            align-content: center;                                     /* Midstiller karusellen */
+            margin-left: auto;                                         /* Midstiller karusellen */
+            margin-right: auto;                                        /* Midstiller karusellen */
+            margin-bottom: 10vw;                                       /* Tomrom under karusellen */
+    
+          }
+
+
+                    .FKCarousel-container {                            /* FOTOKONKURRANSE - KARUSELL */
+
+                      position: relative;                              /* Posisjon */
+                      width: 80%;                                      /* Bredde mellom bildene i karusellen */
+                      margin-left: auto;                               /* Midstiller karusellen */
+                      margin-right: auto;                              /* Midstiller karusellen */
+                      align-content: center;                           /* Midstiller karusellen */
+
+                  }
+                  
+                  
+                        .FKCarousel {
+
+                          display: flex;                               /* Plasserer elementer ved siden av hverandre */
+                          scroll-behavior: smooth;                     /* Animasjon effekt */
+                          transition: transform 0.5s ease;             /* Animasjon ved klikk på knapp */
+
+                        }
+                  
+
+                        .FKCarousel-item {
+
+                          min-width: 100%;                             /* Minimum bredde - får karusellen til å skalere */
+                          max-width: 100%;                             /* Maks bredde - får karusellen til å skalere */
+                          text-align: center;                          /* Midtstilt tekst */
+
+                        }
+                  
+
+                        .FKCarousel-item img {                         /* FOTOKONKURRANSE - KARUSELL - FOTO */
+
+                          max-width: 70vw;                             /* Maks bredde - får karusellen til å skalere */
+                          min-width: 70vw;                             /* Minimum bredde - får karusellen til å skalere */
+                          border: 11px solid;                          /* Ramme */
+                          border-color: #fff;                        /* Farge på ramme*/
+
+                        }
+
+                  
+                        .FKCarousel-item p {                           /* FOTOKONKURRANSE - KARUSELL - TEKST */
+
+                          margin-top: 10px;                            /* Tomrom mellom tekst og fotokarusell */
+                          font-size: 4vw;                              /* Skriftstørrelse 3vw = ca 12px (i 390px format) */
+                          color: #555;                               /* Tekstfarge */
+                          font-family: "AvenirNextCondenced";          /* Font */
+                            
+                        }
+          
+                        
+
+          #FKInstrukser {                                              /* FOTOKONKURRANSE - INSTRUKSER */ 
+
+            display: block;                                            /* Boks/ramme/gruppe for alle elementene relatert til produktet */
+            height: auto;                                              /* Høyde på boks */
+            width: auto;                                               /* Bredde på boks */
+            padding-bottom: 10vw;                                      /* Tomrom under boks */
+            padding-top: 1vw;                                          /* Tomrom over boks */
+
+          }
+    
+
+                .FKInstrukserO {                                       /* FOTOKONKURRANSE - INSTRUKSER - OVERSKIFT */ 
+
+                  display: block;                                      /* For å unngå at andre elementer legger seg ved siden av teksten */
+                  color: #B53721;                                    /* Tekstfarge */
+                  text-align: center;                                  /* Midstilt tekst */ 
+                  font-size: 8vw;                                      /* Skriftstørrelse */ 
+                  font-style: normal;                                  /* Font tynge/stil */
+                  font-family: "AvenirNextCondenced";                  /* Font */
+                  width: 80%;                                          /* Bredde på tekstboks */
+                  height: auto;                                        /* Høyde på tekstboks */
+                  margin-right: auto;                                  /* Spesifiserer tekst plassering */
+                  margin-left: auto;                                   /* Spesifiserer tekst plassering */
+                  
+                  }
+
+
+                  .FKInstrukser {                                      /* FOTOKONKURRANSE - INSTRUKSER - MENGDETEKST */ 
+
+                    display: block;                                    /* For å unngå at andre elementer legger seg ved siden av teksten */
+                    color: #B53721;                                  /* Tekstfarge */
+                    text-align: center;                                /* Midstilt tekst */ 
+                    font-size: 4vw;                                    /* Skriftstørrelse */ 
+                    font-style: normal;                                /* Font tynge/stil */
+                    font-family: "AvenirNextCondenced";                /* Font */
+                    line-height: 8vw;                                  /* Linjeavstand */ 
+                    width: 80%;                                        /* Bredde på tekstboks */
+                    height: auto;                                      /* Høyde på tekstboks */
+                    margin-right: auto;                                /* Spesifiserer tekst plassering */
+                    margin-left: auto;                                 /* Spesifiserer tekst plassering */
+                    margin-bottom: 30vw;                               /* Tomrom mellom tekst og footer */
+
+                  }
 
   }
 

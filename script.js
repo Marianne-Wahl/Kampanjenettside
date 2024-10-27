@@ -1,11 +1,12 @@
 // Konstante elementer / elementer som ikke endrer seg, henter style fra CSS
-const carousel = document.querySelector('.carousel');
-const items = document.querySelectorAll('.carousel-item');
+const carousel = document.querySelector('.carousel, .FKCarousel');
+const items = document.querySelectorAll('.carousel-item, .FKCarousel-item');
 const prevButton = document.querySelector('.prev-btn');
 const nextButton = document.querySelector('.next-btn');
 
+
 // Variabel, CurrentIndex = 0 betyr første element i karusellen
-let currentIndex = 0;
+let currentIndex = 1;
 const itemWidth = items[0].clientWidth; // Bredden på et element
 
 // Funskjon som flytter karusell
@@ -13,6 +14,11 @@ function updateCarouselPosition() {
     carousel.style.transform = `translateX(${-currentIndex * itemWidth}px)`; 
     //Karusellen flyttes horisontalt (X = X-aksen) basert på aktiv side, formelen beregner hvor langt karusellen skal flytte seg
 }
+
+// Funksjon som får karusellen til å starte på bilde nr. 2
+window.addEventListener('load', () => {
+    updateCarouselPosition();  // Oppdater posisjon på bilde
+});
 
 // Flytt til neste side ved klikk
 nextButton.addEventListener('click', () => {
