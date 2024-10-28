@@ -34,6 +34,7 @@ body {                                                                 /* BODY *
               z-index: 3;                                              /* Plasserer header på toppen av illustrasjoner */
               position: relative;                                      /* Posisjon */
             
+          }
 
               .Logo {                                                  /* HEADER - LOGO */
 
@@ -45,16 +46,25 @@ body {                                                                 /* BODY *
               }
 
 
-              .Navigasjonsbar {                                        /* HEADER - NAVIGASJONSBAR */
+              .Navigasjon {                                            /* HEADER - NAVIGASJONSBAR */
+
+                  float: right;                                        /* Plasserer tekst til høyre på siden */
+                  position: relative;                                  /* Posisjon */
+                  top: 5vw;                                            /* Spesifiserer tekstens plassering */
+                  margin-right: 2vw;                                   /* Spesifiserer tekstens plassering */
+
+              }
+
+              .Navigasjonsbar {                                        /* HEADER - NAVIGASJONSBAR - KNAPPER */
 
                   color: #B53721;                                    /* Farge på tekst */
                   font-size: 1.5vw;                                    /* Skriftstørrelse */
                   font-family: "AvenirNextCondenced";                  /* Font */
-                  float: right;                                        /* Plasserer tekst på høyre side av siden */
-                  padding-right: 3.5vw;                                /* Tomrom på høyre side av tekst */
-                  padding-top: 5vw;                                    /* Tomrom på toppen av tekst */
+                  padding-right: 1.5vw;                                /* Tomrom på høyre side av tekst */
+                  padding-left: 1.5vw;                                 /* Tomrom på venstre side av tekst */
+                  padding-top: 2vw;                                    /* Tomrom på toppen av tekst */
+                  padding-bottom: 2vw;                                 /* Tomrom på underside av tekst */
                   text-decoration: none;                               /* Fjerner understrek på navigasjonsbar knappene */
-
 
               } 
 
@@ -63,8 +73,6 @@ body {                                                                 /* BODY *
                 display: none;                                         /* Ikke synlig på desktop versjon */
 
               }
-
-            }
 
 
                 #Splash {                                              /* SPLASH SIDE */
@@ -1533,7 +1541,107 @@ body {                                                                 /* BODY *
   
   
                               }
+          
                               
+
+          #produkter {                                                 /* PRODUKTER - CONTAINER */
+
+            display: flex;                                             /* Lager et 2x2 rutenett basert på divene under */
+            flex-direction: column;                                    /* Lager et 2x2 rutenett basert på divene under */
+            flex-direction: row;                                       /* Lager et 2x2 rutenett basert på divene under */
+            flex-wrap: wrap;                                           /* Plasserer tredje element under første */
+            justify-content: space-evenly;                             /* Gir et jevnt tomrom mellom hvert element */
+            height: auto;                                              /* Høyde på boks/container */
+            width: 100%;                                               /* Bredde på boks/container */
+
+          }
+
+                    .PFoto {                                           /* PRODUKTER - CONTAINER - FOTO */
+
+                      height: auto;                                    /* Høyde på foto */
+                      width: 33.5vw;                                   /* Bredde på foto */
+                      margin-bottom: 4vw;                              /* Tomrom mellom bilde og tekst */
+
+                    }
+
+                    .PSO1 {                                            /* PRODUKTER - CONTAINER - UNDEROVERSKRIFT 1 */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 1.5vw;                                /* Skriftstørrelse */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: -3.5vw;                           /* Tomrom mellom underoverskrift og overskrift */
+
+                    }
+
+
+                    .PO {                                              /* PRODUKTER - CONTAINER - OVERSKRIFT */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 4vw;                                  /* Skriftstørrelse */
+                      font-family: "relation-two";                     /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: -2vw;                             /* Tomrom mellom overskrift og underoverskrift */
+
+                    }
+
+
+                    .PSO2 {                                            /* PRODUKTER - CONTAINER - UNDEROVERSKRIFT 2 */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 1.5vw;                                /* Skriftstørrelse */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: 4vw;                              /* Tomrom mellom tekst og neste element */
+
+                    }
+
+
+                    .PMengdetekst {                                    /* PRODUKTER - CONTAINER - MENGDETEKST */
+
+                      color: #000;                                   /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 1.5vw;                                /* Skriftstørrelse */
+                      font-style: normal;                              /* Font tynge/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 30vw;                                 /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 0px;                             /* Padding under tekstboks */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-bottom: 5vw;                              /* Tomrom mellom tekst og neste element */
+
+                    }
+
+
+                    .PKnapp {                                          /* PRODUKTER - CONTAINER - KNAPP */
+
+                      cursor: pointer;                                 /* Endrer musepekeren */
+                      background-color: #B53721;                     /* Bakgrunnsfarge */
+                      color: #FDECDF;                                /* Tekstfarge */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      font-size: 1vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                      border-radius: 1vw;                              /* Avrundede hjørner */
+                      border: none;                                    /* Ingen ramme */
+                      width: 80%;                                      /* Bredden på knappen */
+                      height: 3vw;                                     /* Høyden på knappen */
+                      box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */     
+                      margin-left: auto;                               /* Midstiller knappen på siden */
+                      margin-right: auto;                              /* Midstiller knappen på siden */
+                      display: block;                                  /* Midstiller knappen på siden */
+                      margin-bottom: 13vw;                             /* Tomrom mellomm knapp og neste element */
+
+                    }
 
    }
 
@@ -3042,6 +3150,106 @@ body {                                                                 /* BODY *
                   }
 
 
+          #produkter {                                                 /* PRODUKTER - CONTAINER */
+
+            display: flex;                                             /* Lager et 2x2 rutenett basert på divene under */
+            flex-direction: column;                                    /* Lager et 2x2 rutenett basert på divene under */
+            flex-direction: row;                                       /* Lager et 2x2 rutenett basert på divene under */
+            flex-wrap: wrap;                                           /* Plasserer tredje element under første */
+            justify-content: space-evenly;                             /* Gir et jevnt tomrom mellom hvert element */
+            height: auto;                                              /* Høyde på boks/container */
+            width: 100%;                                               /* Bredde på boks/container */
+
+          }
+
+                    .PFoto {                                           /* PRODUKTER - CONTAINER - FOTO */
+
+                      height: auto;                                    /* Høyde på foto */
+                      width: 33.5vw;                                   /* Bredde på foto */
+                      margin-bottom: 4vw;                              /* Tomrom mellom bilde og tekst */
+
+                    }
+
+                    .PSO1 {                                            /* PRODUKTER - CONTAINER - UNDEROVERSKRIFT 1 */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 1.5vw;                                /* Skriftstørrelse */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: -3.5vw;                           /* Tomrom mellom underoverskrift og overskrift */
+
+                    }
+
+
+                    .PO {                                              /* PRODUKTER - CONTAINER - OVERSKRIFT */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 4vw;                                  /* Skriftstørrelse */
+                      font-family: "relation-two";                     /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: -2vw;                             /* Tomrom mellom overskrift og underoverskrift */
+
+                    }
+
+
+                    .PSO2 {                                            /* PRODUKTER - CONTAINER - UNDEROVERSKRIFT 2 */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 1.5vw;                                /* Skriftstørrelse */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: 4vw;                              /* Tomrom mellom tekst og neste element */
+
+                    }
+
+
+                    .PMengdetekst {                                    /* PRODUKTER - CONTAINER - MENGDETEKST */
+
+                      color: #000;                                   /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 1.5vw;                                /* Skriftstørrelse */
+                      font-style: normal;                              /* Font tynge/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      max-width: 30vw;                                 /* Maks bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 0px;                             /* Padding under tekstboks */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-bottom: 5vw;                              /* Tomrom mellom tekst og neste element */
+
+                    }
+
+                    
+                    .PKnapp {                                          /* PRODUKTER - CONTAINER - KNAPP */
+
+                      cursor: pointer;                                 /* Endrer musepekeren */
+                      background-color: #B53721;                     /* Bakgrunnsfarge */
+                      color: #FDECDF;                                /* Tekstfarge */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      font-size: 1vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                      border-radius: 1vw;                              /* Avrundede hjørner */
+                      border: none;                                    /* Ingen ramme */
+                      width: 80%;                                      /* Bredden på knappen */
+                      height: 3vw;                                     /* Høyden på knappen */
+                      box-shadow: 0 0.5vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */     
+                      margin-left: auto;                               /* Midstiller knappen på siden */
+                      margin-right: auto;                              /* Midstiller knappen på siden */
+                      display: block;                                  /* Midstiller knappen på siden */
+                      margin-bottom: 13vw;                             /* Tomrom mellomm knapp og neste element */
+
+                    }
+
+
 } 
   
   
@@ -3078,12 +3286,69 @@ body {                                                                 /* BODY *
 
           }
 
-                  .Navigasjonsbar {                                    /* HEADER - NAVIGASJONSBAR */ 
+                 .NavigasjonsbarOverlay {                                    /* HEADER - NAVIGASJONSBAR */ 
 
-                    display: none;                                     /* Ikke synlig på mobil versjon */ 
+                    display: none;
+                    background-color: #FDECDF;
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    position: fixed;
+                    top: 0;
+                    right: -450vw;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 8vw;
+                    transition: .3s ease;
 
                   }
                   
+                  
+                  .NavigasjonsbarOverlay.active {                                    /* HEADER - NAVIGASJONSBAR */ 
+
+                    right: 0;
+
+                  }
+
+
+                  .Navigasjonsbar {
+
+                    color: #B53721;
+                    font-family: "AvenirNextCondenced";
+                    font-size: 8vw;
+                    width: 80%;
+                    height: auto;
+                    display: block;               /* Forces each link onto a new line */
+                    padding: 10px 0;              /* Adds space between links */
+                    
+                  }
+
+                  .close-btn {
+
+                    position: absolute;
+                    top: 14vw;
+                    right: 7.5vw;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    background-color: none;
+
+                  }
+
+                  .X {
+
+                    width: 15vw;
+                    height: 15vw;
+
+                  }
+
+                  .close-btn:hover {
+                    color: #8A2E26;
+                    background-color: none;
+                  }
+
                 
                     .Logo {                                            /* HEADER - LOGO */ 
 
@@ -4385,7 +4650,6 @@ body {                                                                 /* BODY *
           height: auto;                                                /* Høyde på boks */
           width: auto;                                                 /* Bredde på boks */
           align-content: center;                                       /* Midtstiller tekst*/
-          z-index: 4;                                                  /* Plasserer tekst over illustrasjoner */
           position: relative;                                          /* Posisjon */
 
         }
@@ -4516,6 +4780,107 @@ body {                                                                 /* BODY *
                     margin-bottom: 30vw;                               /* Tomrom mellom tekst og footer */
 
                   }
+
+          #produkter {                                                 /* PRODUKTER - CONTAINER */
+
+            margin-top: 20vw;
+            margin-bottom: 60vw;
+            display: block;
+            height: auto;                                              /* Høyde på boks/container */
+            width: 100%;                                               /* Bredde på boks/container */
+
+          }
+
+                    .PFoto {                                           /* PRODUKTER - CONTAINER - FOTO */
+
+                      height: auto;                                    /* Høyde på foto */
+                      width: 80vw;                                   /* Bredde på foto */
+                      margin-bottom: 15vw;                              /* Tomrom mellom bilde og tekst */
+                      margin-left: auto;
+                      margin-right: auto;
+                      display: block;
+
+                    }
+
+                    .PSO1 {                                            /* PRODUKTER - CONTAINER - UNDEROVERSKRIFT 1 */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 4vw;                                /* Skriftstørrelse */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: -11vw;                           /* Tomrom mellom underoverskrift og overskrift */
+
+                    }
+
+
+                    .PO {                                              /* PRODUKTER - CONTAINER - OVERSKRIFT */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 13vw;                                  /* Skriftstørrelse */
+                      font-family: "relation-two";                     /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: -4vw;                             /* Tomrom mellom overskrift og underoverskrift */
+
+                    }
+
+
+                    .PSO2 {                                            /* PRODUKTER - CONTAINER - UNDEROVERSKRIFT 2 */
+
+                      color: #B53721;                                /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */
+                      font-size: 4vw;                                /* Skriftstørrelse */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      position: relative;                              /* Posisjon */
+                      margin-bottom: 8vw;                              /* Tomrom mellom tekst og neste element */
+
+                    }
+
+
+                    .PMengdetekst {                                    /* PRODUKTER - CONTAINER - MENGDETEKST */
+
+                      color: #000;                                   /* Tekstfarge */
+                      text-align: center;                              /* Midstilt tekst */ 
+                      font-size: 4vw;                                /* Skriftstørrelse */
+                      font-style: normal;                              /* Font tynge/stil */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      width: 80%;                                      /* Bredde på tekstboks */
+                      height: auto;                                    /* Høyde på tekstboks */
+                      padding-bottom: 0px;                             /* Padding under tekstboks */
+                      margin-left: auto;                               /* Midstiller teskt på siden */
+                      margin-right: auto;                              /* Midstiller teskt på siden */
+                      margin-bottom: 15vw;                              /* Tomrom mellom tekst og neste element */
+
+                    }
+
+                    
+                    .PKnapp {                                          /* PRODUKTER - CONTAINER - KNAPP */
+
+                      cursor: pointer;                                 /* Endrer musepekeren */
+                      background-color: #B53721;                     /* Bakgrunnsfarge */
+                      color: #FDECDF;                                /* Tekstfarge */
+                      font-family: "AvenirNextCondenced";              /* Font */
+                      font-size: 4vw;                                  /* Skriftstørrelse 4vw = ca 16px (i 390px format) */
+                      border-radius: 5vw;                              /* Avrundede hjørner */
+                      border: none;                                    /* Ingen ramme */
+                      width: 79vw;                                      /* Bredden på knappen */
+                      height: 16vw;                                     /* Høyden på knappen */
+                      max-width: 388px; /* Maks bredde på knappen */
+                      box-shadow: 0 2vw 0px 0 rgba(145, 25, 18, 1);    /* Skygge under knapp; 0 = horisontal skygge - 7px = vertikal skygge - 0px = blur radius - 0 = spredningsradius rgba = skyggensfargetone i RGB pluss opacity */     
+                      margin-left: auto;                               /* Midstiller knappen på siden */
+                      margin-right: auto;                              /* Midstiller knappen på siden */
+                      display: block;                                  /* Midstiller knappen på siden */
+                      margin-bottom: 40vw;                             /* Tomrom mellomm knapp og neste element */
+
+                    }
+
 
   }
 
