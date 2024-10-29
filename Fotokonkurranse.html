@@ -5,10 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JS">
     <meta name="description" content="Limited edition dessert fra EK">
 
-    <title>Ek Gårdskjøkken sommerkampanje</title>
+    <title>Ek Gårdskjøkken fotokonkurranse</title>
 
     <link rel="stylesheet" href="styles.css"> <!--Link til CSS fil-->
     <link rel="stylesheet" href="https://use.typekit.net/vgp0hws.css"> <!--Link til Adobe fonts-->
@@ -26,29 +26,33 @@
 <body>
 
 
-<!--Header-->
+<!--Header -->
 <header class="Header"> 
 
-    <!-- Logo -->
+    <!--Logo-->
     <a href="Index.html"><img class="Logo" src="../Logo/Logo.png" alt="Ek Gårdskjøkken logo"></a>
 
-    <!-- Hamburgermeny -->
+    <!--Hamburgermeny (tablet og mobil)-->
     <img class="Hamburgermeny" src="../Buttons/HamburgermenyRed.png" alt="Meny">
 
+
+<!--Navigasjonsbar-->
 <div class="Navigasjon">
 
+<!--Navigasjonsbar - Overlay-->
 <nav class="NavigasjonsbarOverlay">
 
-    <button class="close-btn"> <img class="X" src="../Buttons/X.png"> </button> 
-
-    <!-- Navigasjonsbar -->
+    <!--Navigasjonsbar - Overlay - Lukk (X)-->
+    <button class="close-btn"> <img class="X" src="../Buttons/X.png" alt="X"> </button> 
     
+    <!--Navigasjonsbar - Knapper-->
     <a class="Navigasjonsbar" href="SommerensNyhet.html"> Sommerens nyhet </a>
     <a class="Navigasjonsbar" href="Produkter.html"> Produkter </a>
     <a class="Navigasjonsbar" href="Fotokonkurranse.html"> Fotokonkurranse </a>
     <a class="Navigasjonsbar" href="OmEk.html"> Om Ek Gårdskjøkken </a>
     <a class="Navigasjonsbar" href="Bestill.html"> Bestill </a>
 
+    <!--Java Script - gjør hamburgermenyen interaktiv-->
     <script src="hamburgermeny.js"></script>
 
 </nav>
@@ -56,6 +60,8 @@
 </div>    
 
 </header>
+
+
 
  <!--Splash-->
 <div id="Fotokonkurranse">
@@ -65,12 +71,13 @@
     <h1 class="O"> Fotokonkurranse </h1>
 
      <!--Illustrasjoner-->
-    <img class="LeafTopLeft" src="../Illustrations/LeafTopLeft.png">
-    <img class="LeafTopRight" src="../Illustrations/LeafTopRight.png">
+    <img class="LeafTopLeft" src="../Illustrations/LeafTopLeft.png" alt="Dekorativt blad">
+    <img class="LeafTopRight" src="../Illustrations/LeafTopRight.png" alt="Dekorativt blad">
 
 
 </div>
 
+<!--Innledning (mengdetekst)-->
 <div id="FKMengdetekst">
 
 <p class="FKMengdetekst"> Snap et foto av din sommer med Ek sin limited edition 
@@ -79,51 +86,68 @@
 </div>
 
 
-<!--Foto konkurranse-->
+<!--Foto konkurranse karusell-->
 <div id="FKKarusell">
 
-    <!--Foto konkurranse karusell-->
+    <!--Foto konkurranse karusell container-->
     <div class="FKCarousel-container">
         <div class="FKCarousel">
 
+            <!--Karusell element-->
             <div class="FKCarousel-item">
 
+                <!--Foto-->
                 <img src="../Photos/ExamplePhoto1.png" alt="Image 1">
 
+                <!--Credit-->
                 <p> @Eksempel_foto_1</p>
 
             </div>
 
+            <!--Karusell element-->
             <div class="FKCarousel-item">
 
+                <!--Foto-->
                 <img src="../Photos/ExamplePhoto2.png" alt="Image 2">
 
+                <!--Credit-->
                 <p> @Eksempel_foto_2</p>
 
             </div>
 
+            <!--Karusell element-->
             <div class="FKCarousel-item">
 
+                <!--Foto-->
                 <img src="../Photos/ExamplePhoto3.png" alt="Image 3">
 
+                <!--Credit-->
                 <p> @Eksempel_foto_3</p>
 
             </div>
+
         </div>
 
+
+        <!--Karusell knapper-->
         <button class="prev-btn">←</button>
         <button class="next-btn">→</button>
 
+        <!--Java Script - gjør karusellen interaktiv-->
         <script src="script.js"></script>
+
 
     </div>
 
 </div>
 
+<!--Konkurranse instrukser-->
 <div id="FKInstrukser">
 
+    <!--Underoverskrift-->
     <h2 class="FKInstrukserO"> Hvordan delta: </h2>
 
+    <!--Mengdetekst med linjeskift etter hver linje-->
     <p class="FKInstrukser"> 
      1. Ta et bilde av Ek Limited Edition Panna Cotta
      <br>
@@ -154,9 +178,9 @@
 </footer>
 
 <!--Illustrasjoner Footer -->
-<img class="LeafLeftFooter" src="../Illustrations/LeafLeftFooter.png">
-<img class="LeafRightFooter" src="../Illustrations/LeafRightFooter.png">
-<img class="StrawberryFooter" src="../Illustrations/StrawberryFooter.png">
+<img class="LeafLeftFooter" src="../Illustrations/LeafLeftFooter.png" alt="Dekorativt blad">
+<img class="LeafRightFooter" src="../Illustrations/LeafRightFooter.png" alt="Dekorativt blad">
+<img class="StrawberryFooter" src="../Illustrations/StrawberryFooter.png" alt="Dekorativt jordbær">
 
 
 </body>

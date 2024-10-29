@@ -8,7 +8,7 @@
     <meta name="keywords" content="HTML, CSS">
     <meta name="description" content="Limited edition dessert fra EK">
 
-    <title>Ek Gårdskjøkken sommerkampanje</title>
+    <title>Sommerens nyhet</title>
 
     <link rel="stylesheet" href="styles.css"> <!--Link til CSS fil-->
     <link rel="stylesheet" href="https://use.typekit.net/vgp0hws.css"> <!--Link til Adobe fonts-->
@@ -28,29 +28,33 @@
 <body>
 
 
-<!--Header-->
+<!--Header -->
 <header class="Header"> 
 
-    <!-- Logo -->
+    <!--Logo-->
     <a href="Index.html"><img class="Logo" src="../Logo/Logo.png" alt="Ek Gårdskjøkken logo"></a>
 
-    <!-- Hamburgermeny -->
+    <!--Hamburgermeny (tablet og mobil)-->
     <img class="Hamburgermeny" src="../Buttons/HamburgermenyRed.png" alt="Meny">
 
+
+<!--Navigasjonsbar-->
 <div class="Navigasjon">
 
+<!--Navigasjonsbar - Overlay-->
 <nav class="NavigasjonsbarOverlay">
 
-    <button class="close-btn"> <img class="X" src="../Buttons/X.png"> </button> 
-
-    <!-- Navigasjonsbar -->
+    <!--Navigasjonsbar - Overlay - Lukk (X)-->
+    <button class="close-btn"> <img class="X" src="../Buttons/X.png" alt="X"> </button> 
     
+    <!--Navigasjonsbar - Knapper-->
     <a class="Navigasjonsbar" href="SommerensNyhet.html"> Sommerens nyhet </a>
     <a class="Navigasjonsbar" href="Produkter.html"> Produkter </a>
     <a class="Navigasjonsbar" href="Fotokonkurranse.html"> Fotokonkurranse </a>
     <a class="Navigasjonsbar" href="OmEk.html"> Om Ek Gårdskjøkken </a>
     <a class="Navigasjonsbar" href="Bestill.html"> Bestill </a>
 
+    <!--Java Script - gjør hamburgermenyen interaktiv-->
     <script src="hamburgermeny.js"></script>
 
 </nav>
@@ -58,6 +62,7 @@
 </div>    
 
 </header>
+
 
 
  <!--Splash-->
@@ -68,13 +73,13 @@
     <h1 class="O"> Sommernyhet </h1>
 
      <!--Illustrasjoner-->
-    <img class="LeafTopLeft" src="../Illustrations/LeafTopLeft.png">
-    <img class="LeafTopRight" src="../Illustrations/LeafTopRight.png">
+    <img class="LeafTopLeft" src="../Illustrations/LeafTopLeft.png" alt="Dekorativt blad">
+    <img class="LeafTopRight" src="../Illustrations/LeafTopRight.png" alt="Dekorativt blad">
 
 </div>
 
 
- <!--Om Panna Cotta -->
+ <!--Om Panna Cotta - Container-->
 <div class="containerSN">
     
     <!--Foto-->
@@ -82,32 +87,34 @@
     <img class="PannaCottaInfo" src="../Photos/PannaCottaSplash2.png" alt="Foto av skål med Panna Cotta">   
     </div>
 
+    <!--Om Panna cotta-->
     <div id="PannaCottaInfo">
 
-    <!--Tre-delt overskrift-->
-    <h2 class="SO1SN"> Limited edition </h2>
-    <h2 class="OSN"> Panna Cotta </h2>
-    <h2 class="SO2SN"> med saus av norske jordbær </h2>
+        <!--Tre-delt overskrift-->
+        <h2 class="SO1SN"> Limited edition </h2>
+        <h2 class="OSN"> Panna Cotta </h2>
+        <h2 class="SO2SN"> med saus av norske jordbær </h2>
 
-    <!--Tekst-->
-   <p class="MengdetekstSN">Panna Cotta er en eksklusiv fløtedessert hvor Ek Gårdskjøkken bruker 
-    råvarer av høyeste kvalitet. Vi erstatter gelatin med eggehvite fra Ek Gårdsegg 
-    og bruker ferske meieriprodukter samt vaniljestang fra Tahiti. Desserten leveres
-    i en elegant terracotta-skål som kan gjenbrukes.</p>
+         <!--Mengdetekst-->
+        <p class="MengdetekstSN">Panna Cotta er en eksklusiv fløtedessert hvor Ek Gårdskjøkken bruker 
+        råvarer av høyeste kvalitet. Vi erstatter gelatin med eggehvite fra Ek Gårdsegg 
+        og bruker ferske meieriprodukter samt vaniljestang fra Tahiti. Desserten leveres
+        i en elegant terracotta-skål som kan gjenbrukes.</p>
 
-    <!--Buttons-->
-    <a href="Bestill.html"> <button class="buttonSN"> Kjøp her </button> </a>
+         <!--Buttons-->
+        <a href="Bestill.html"> <button class="buttonSN"> Kjøp her </button> </a>
 
     </div>
 
 </div>
 
+<!--Jordbær Container-->
 <div id="jordbær">
 
     <!--Foto-->
     <img class="jordbærFoto" src="../Photos/Strawberries.png" alt="Foto av jordbær">
 
-    <!--Tekst-->
+    <!--Mengdetekst-->
    <p class="jordbærTekst">Ek bruker råvarer av høyeste kvalitet! Vi erstatter gelatin
     med eggehvite fra Ek Gårdsegg og bruker ferske meieriprodukter samt vaniljestang 
     fra Tahiti. I tillegg har vi inkludert en hjemmelaget saus av sesongens beste 
@@ -116,83 +123,103 @@
 </div>
 
 <div>
-
+    <!--Underoverskrift-->
     <h3 class="OSNI"> Ingredienser </h3>
 
 </div>
 
+<!--Ingredienser Container-->
 <div class="containerSNI">
 
+        <!--Fløte-->
         <div class="fløte">
 
             <!--Foto-->
             <img class="ingredienser" src="../Photos/CreamBowl.png" alt="Foto av fløte i Ek terracotta-skål">
 
+            <!--Tekst-->
             <p class="ingredienserTekst"> Fløte </p>
 
         </div>
 
+        <!--Sukker-->
         <div class="sukker">
 
             <!--Foto-->
             <img class="ingredienser" src="../Photos/SugarBowl.png" alt="Foto av sukker i Ek terracotta-skål">
 
+            <!--Tekst-->
             <p class="ingredienserTekst"> Sukker </p>
+
 
         </div>
 
+        <!--Egg-->
         <div class="egg">
 
             <!--Foto-->
             <img class="ingredienser" src="../Photos/EggBowl.png" alt="Foto av egg i Ek terracotta-skål">
 
+            <!--Tekst-->
             <p class="ingredienserTekst"> Eggehviter </p>
 
         </div>
 
+        <!--Vanilje-->
         <div class="vanilje">
 
             <!--Foto-->
             <img class="ingredienser" src="../Photos/VanillaBowl.png" alt="Foto av vanilje i Ek terracotta-skål">
 
+            <!--Tekst-->
             <p class="ingredienserTekst"> Vanilje </p>
 
         </div>
 
+        <!--Sitrus-->
         <div class="sitrus">
 
             <!--Foto-->
             <img class="ingredienser" src="../Photos/LemonBowl 2.png" alt="Foto av sitron i Ek terracotta-skål">
 
+            <!--Tekst-->
             <p class="ingredienserTekst"> Sitrus </p>
 
         </div>
 
+        <!--Jordbær-->
         <div class="jordbær">
 
             <!--Foto-->
             <img class="ingredienser" src="../Photos/StrawberryBowl.png" alt="Foto av jordbær i Ek terracotta-skål">
 
+            <!--Tekst-->
             <p class="ingredienserTekst"> Norske Jordbær </p>
 
         </div>
 
 </div>
 
+<!--Næringsinnhold Container-->
 <div class="containerSNN">
 
+        <!--Gruppe for tekstelementer-->
         <div class="TekstSNN">
-            
+
+             <!--Underoverskrift-->
             <h4 class="UnderoverskriftSNN"> Næringsinnhold </h4>
+
+            <!--Tekst-->
             <p class="MengdetekstSNN"> pr. 100 g </p>
 
         </div>
 
+        <!--Tabell med næringsinnhold-->
         <div class="TabellSNN">
 
             <table class="table">
 
-                <tr>
+                  <tr>
                     <td>Energi</td>
                     <td>1320 kj</td>
                   </tr>
@@ -243,6 +270,7 @@
 
 </div>
 
+<!--Knapp-->
 <div id="buttonSingelSN">
 
     <a href="Bestill.html"> <button class="buttonSingelSN"> Kjøp her </button> </a>
@@ -265,9 +293,9 @@
 </footer>
 
 <!--Illustrasjoner Footer -->
-<img class="LeafLeftFooter" src="../Illustrations/LeafLeftFooter.png">
-<img class="LeafRightFooter" src="../Illustrations/LeafRightFooter.png">
-<img class="StrawberryFooter" src="../Illustrations/StrawberryFooter.png">
+<img class="LeafLeftFooter" src="../Illustrations/LeafLeftFooter.png" alt="Dekorativt blad">
+<img class="LeafRightFooter" src="../Illustrations/LeafRightFooter.png" alt="Dekorativt blad">
+<img class="StrawberryFooter" src="../Illustrations/StrawberryFooter.png" alt="Dekorativt jordbær">
 
 
 </body>

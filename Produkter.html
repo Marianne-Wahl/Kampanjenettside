@@ -5,10 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="HTML, CSS, JS">
     <meta name="description" content="Limited edition dessert fra EK">
 
-    <title>Ek Gårdskjøkken sommerkampanje</title>
+    <title>Ek Gårdskjøkkens produkter</title>
 
     <link rel="stylesheet" href="styles.css"> <!--Link til CSS fil-->
     <link rel="stylesheet" href="https://use.typekit.net/vgp0hws.css"> <!--Link til Adobe fonts-->
@@ -29,29 +29,33 @@
 
 <body>
 
-<!--Header-->
+<!--Header -->
 <header class="Header"> 
 
-        <!-- Logo -->
+        <!--Logo-->
         <a href="Index.html"><img class="Logo" src="../Logo/Logo.png" alt="Ek Gårdskjøkken logo"></a>
 
-        <!-- Hamburgermeny -->
+        <!--Hamburgermeny (tablet og mobil)-->
         <img class="Hamburgermeny" src="../Buttons/HamburgermenyRed.png" alt="Meny">
 
+
+<!--Navigasjonsbar-->
 <div class="Navigasjon">
 
+    <!--Navigasjonsbar - Overlay-->
     <nav class="NavigasjonsbarOverlay">
 
-        <button class="close-btn"> <img class="X" src="../Buttons/X.png"> </button> 
-
-        <!-- Navigasjonsbar -->
+        <!--Navigasjonsbar - Overlay - Lukk (X)-->
+        <button class="close-btn"> <img class="X" src="../Buttons/X.png" alt="X"> </button> 
         
+        <!--Navigasjonsbar - Knapper-->
         <a class="Navigasjonsbar" href="SommerensNyhet.html"> Sommerens nyhet </a>
         <a class="Navigasjonsbar" href="Produkter.html"> Produkter </a>
         <a class="Navigasjonsbar" href="Fotokonkurranse.html"> Fotokonkurranse </a>
         <a class="Navigasjonsbar" href="OmEk.html"> Om Ek Gårdskjøkken </a>
         <a class="Navigasjonsbar" href="Bestill.html"> Bestill </a>
 
+        <!--Java Script - gjør hamburgermenyen interaktiv-->
         <script src="hamburgermeny.js"></script>
 
     </nav>
@@ -59,6 +63,8 @@
 </div>    
 
 </header>
+
+
 
 
  <!--Splash-->
@@ -69,29 +75,33 @@
     <h1 class="O"> Dessert utvalg </h1>
 
      <!--Illustrasjoner-->
-    <img class="LeafTopLeft" src="../Illustrations/LeafTopLeft.png">
-    <img class="LeafTopRight" src="../Illustrations/LeafTopRight.png">
+    <img class="LeafTopLeft" src="../Illustrations/LeafTopLeft.png" alt="Dekorativt blad">
+    <img class="LeafTopRight" src="../Illustrations/LeafTopRight.png" alt="Dekorativt blad">
 
 
 </div>
 
+<!--Produkter-->
 <div id="produkter">
 
+
+    <!--Limited edition produkt-->
     <div class="LEProdukt">    
         
-        <img class="PFoto" src="../Photos/LimitedEditionPannaCottaBoks.png">
+            <!--Foto-->
+            <img class="PFoto" src="../Photos/LimitedEditionPannaCottaBoks.png" alt="Foto av Limited edition Panna Cotta emballasje">
 
             <!--Tre-delt overskrift-->
             <h2 class="PSO1"> Limited edition </h2>
             <h2 class="PO"> Panna Cotta </h2>
             <h2 class="PSO2"> med saus av norske jordbær </h2>
 
-             <!--Tekst-->
+             <!--Mengdetekst-->
             <p class="PMengdetekst">Panna Cotta er en eksklusiv fløtedessert hvor Ek Gårdskjøkken bruker 
              råvarer av høyeste kvalitet. Vi erstatter gelatin med eggehvite fra Ek Gårdsegg 
              og bruker ferske meieriprodukter samt vaniljestang fra Tahiti. Desserten leveres
              i en elegant terracotta-skål som kan gjenbrukes.
-            <br>
+            <br> <!--Da mengdeteksten her er kortere, sikrer linjeskift at knappene under fremdeles havner på samme linje-->
             <br>
             </p>
 
@@ -100,15 +110,17 @@
 
     </div>
 
+    <!--Creme Brulee produkt-->
     <div class="CBProdukt">    
         
-        <img class="PFoto" src="../Photos/CremeBruleeBoks.png">
+            <!--Foto-->
+            <img class="PFoto" src="../Photos/CremeBruleeBoks.png" alt="Foto av Creme Brulee emballasje">
 
             <!--To-delt overskrift-->
             <h2 class="PO"> Crème Brûlée </h2>
             <h2 class="PSO2"> med ekte vanilje </h2>
 
-             <!--Tekst-->
+             <!--Mengdetekst-->
             <p class="PMengdetekst"> Klassisk Crème Brûlée er en eksklusiv, eggbasert dessert der
                 råvarekvaliteten er avgjørende. Ek Gårdskjøkken bruker førsteklasses ingredienser
                 som Ek Gårdsegg, ferske meieriprodukter, polynesisk vanilje fra Tahiti og Demerarasukker.
@@ -120,20 +132,22 @@
     </div>
 
 
+    <!--Panna cotta produkt-->
     <div class="PCProdukt">    
         
-        <img class="PFoto" src="../Photos/PannaCottaBoks.png">
+            <!--Foto-->
+            <img class="PFoto" src="../Photos/PannaCottaBoks.png" alt="Foto av Panna Cotta emballasje">
 
             <!--To-delt overskrift-->
             <h2 class="PO"> Panna Cotta </h2>
             <h2 class="PSO2"> med sitrus og ekte vanilje </h2>
 
-             <!--Tekst-->
+             <!--Mengdetekst-->
             <p class="PMengdetekst">Panna Cotta er en eksklusiv fløtedessert hvor Ek Gårdskjøkken bruker 
              råvarer av høyeste kvalitet. Vi erstatter gelatin med eggehvite fra Ek Gårdsegg 
              og bruker ferske meieriprodukter samt vaniljestang fra Tahiti. Desserten leveres
              i en elegant terracotta-skål som kan gjenbrukes.
-            <br>
+            <br> <!--Da mengdeteksten her er kortere, sikrer linjeskift at knappene under fremdeles havner på samme linje-->
             <br>
             </p>
 
@@ -142,16 +156,17 @@
 
     </div>
 
-
+    <!--Moccapudding produkt-->
     <div class="MPProdukt">    
         
-        <img class="PFoto" src="../Photos/MoccaPuddingBoks.png">
+             <!--Foto-->
+            <img class="PFoto" src="../Photos/MoccaPuddingBoks.png" alt="Foto av Moccapudding emballasje">
 
             <!--To-delt overskrift-->
             <h2 class="PO"> Moccapudding </h2>
             <h2 class="PSO2"> med karamellsaus </h2>
 
-             <!--Tekst-->
+             <!--Mengdetekst-->
             <p class="PMengdetekst">Moccapudding er en tradisjonsrik, eggbasert dessert
                 som passer til både hverdag og fest. Ek Gårdskjøkken bruker førsteklasses
                 ingredienser som Ek Gårdsegg og ferske meieriprodukter, og følger vår tradisjon
@@ -182,9 +197,9 @@
 </footer>
 
 <!--Illustrasjoner Footer -->
-<img class="LeafLeftFooter" src="../Illustrations/LeafLeftFooter.png">
-<img class="LeafRightFooter" src="../Illustrations/LeafRightFooter.png">
-<img class="StrawberryFooter" src="../Illustrations/StrawberryFooter.png">
+<img class="LeafLeftFooter" src="../Illustrations/LeafLeftFooter.png" alt="Dekorativt blad">
+<img class="LeafRightFooter" src="../Illustrations/LeafRightFooter.png" alt="Dekorativt blad">
+<img class="StrawberryFooter" src="../Illustrations/StrawberryFooter.png" alt="Dekorativt jordbær">
 
 
 </body>
