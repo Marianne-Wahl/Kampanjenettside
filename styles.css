@@ -1745,6 +1745,10 @@ body {                                                                 /* BODY *
 
                   }
 
+                  .close-btn:hover {
+                    background-color: #FDECDF;                       /* Ingen synlig bakgrunnsfarge på hover */ 
+                }
+
                 
                     .Logo {                                            /* HEADER - LOGO */ 
 
@@ -3399,6 +3403,9 @@ body {                                                                 /* BODY *
 
                   }
 
+                  .close-btn:hover {
+                    background-color: #FDECDF;                       /* Ingen synlig bakgrunnsfarge på hover */ 
+                }
 
                   .X {                                                 /* HEADER - NAVIGASJONSBAR - X-knapp */ 
 
